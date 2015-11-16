@@ -1,0 +1,103 @@
+
+\documentclass[smallcondensed]{svjour3}    % onecolumn (standard format)
+
+%\documentclass[smallextended]{svjour3}     % onecolumn (second format)
+
+%\documentclass[twocolumn]{svjour3}         % twocolumn
+
+%
+\smartqed  % flush right qed marks, e.g. at end of proof
+
+
+%
+% insert here the call for the packages your document requires
+
+%
+\usepackage{graphicx}
+%
+% \usepackage{mathptmx}      
+
+%\usepackage{latexsym}
+% etc.
+
+%%%%%%%%%%%     IMPORTANT
+%
+% please place your own definitions here and don't use \def but
+% \newcommand{}{}
+
+%%%%%%%%%% 56
+
+
+\begin{document}
+
+
+\title{Insert your title here}
+\subtitle{Do you have a subtitle? \\ If so, write it here}
+
+
+%\titlerunning{Short form of title} % if too long for running head
+
+
+\author{First Author         \and
+        Second Author %etc.
+}
+
+
+%\authorrunning{Short form of author list} % if too long for running head
+
+
+\institute{F. Author \at
+              first address \\
+              Tel.: +123-45-678910\\
+              Fax: +123-45-678910\\
+              \email{fauthor@example.com} }        
+\maketitle
+
+
+\begin{abstract}
+Insert your abstract here. 
+Include keywords, PACS and mathematical
+subject classification numbers as needed.
+
+\keywords{First keyword \and Second keyword \and More}
+% \PACS{PACS code1 \and PACS code2 \and more}
+
+\end{abstract}
+
+
+\section{Introduction}
+\label{intro}
+
+Your text comes here. 
+\section{How to introduce references in text}
+The determination of the age of the family has been the concern of some authors who studied stable chaos (Firstauthor 1979, Author and Coauthor 1999, Another 2009).
+Herein, we use the formulations given by Onemore (1979). That formulation 
+was developed to study it specifically ´ by Secondmore (1989, 1993).
+%\begin{acknowledgements}
+%If you'd like to thank anyone, place your comments here
+%and remove the percent signs.
+
+%\end{acknowledgements}
+
+
+% Non-BibTeX users please use
+
+\begin{thebibliography}{}
+%
+% and use \bibitem to create references. Consult the Instructions
+
+% for authors for reference list style.
+%
+
+%%%%%%%%%%% SEE EXAMPLES
+
+\bibitem{label1}Firstname, X.:
+Measure of the exponential
+Celest. Mech. Dyn. Astron. {\bf 204}, 391-404 (1979)
+\bibitem{label2}Author, X. and Coauthor, Y.: 
+On remarks and question. In: J.Doe (ed) System with Degrees of Freedom, pp. 5668, Kluver, Dordrecht (1999)
+\bibitem{label3}Another, X. .: 
+Regular Dynamics, Springer, New York (2009)
+\end{thebibliography}
+
+\end{document}
