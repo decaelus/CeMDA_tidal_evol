@@ -2,6 +2,8 @@ import numpy as np
 from astropy.units import cds
 import astropy.units as u
 
+import mesa_reader as ms
+
 #These models come from Lopez & Fortney (2013 -- http://iopscience.iop.org/article/10.1088/0004-637X/792/1/1/meta)
 
 def Lopez_core_radius(Mcore):
