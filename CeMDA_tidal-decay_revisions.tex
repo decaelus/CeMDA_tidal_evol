@@ -1,10 +1,7 @@
-%Here's how I made the revisions tex file --
-%latexdiff --config="PICTUREENV=(?:picture|DIFnomarkup|equation)[\w\d*@]*" CeMDA_tidal-decay_original_submission.tex CeMDA_tidal-decay_first_resubmission.tex > CeMDA_tidal-decay_revisions.tex
-%
 % This is a general template file for the LaTeX package SVJour3
 %DIF LATEXDIFF DIFFERENCE FILE
 %DIF DEL CeMDA_tidal-decay_original_submission.tex   Mon Feb 29 21:42:34 2016
-%DIF ADD CeMDA_tidal-decay_first_resubmission.tex    Fri Apr 22 16:24:30 2016
+%DIF ADD CeMDA_tidal-decay_first_resubmission.tex    Fri Apr 22 10:45:50 2016
 % for Springer journals. Original by Springer Heidelberg, 2010/09/16
 %
 % Use it as the basis for your article. Delete % signs as needed.
@@ -333,7 +330,9 @@ As the hot Jupiter loses its atmosphere, eventually its core (if it has one) beg
 
 If the initial orbital expansion drives the planet far enough out, the tidal torque may become small enough that mass loss rate tapers off, as shown in Equation \ref{eqn:RLO_mass_loss_rate}, which would presumably leave the planet with a gaseous envelope. Radiative cooling dominates the time evolution of $R_{\rm p}$ and gives $\partial \ln R_{\rm p}/\partial t < 0$, meaning that term only reduces the mass loss rate.
 
-However, RLO is not the only process that removes planetary mass -- short-period gas giants are also prone to photoevaporative mass loss, in which heating of a planet's upper atmosphere by X-ray and ultraviolet (XUV) drives a hydrodynamic outflow  \cite{VidalMadjar2003Extended}. Several studies, including \cite{Lopez2013Role}, have shown that this evaporative mass loss can completely remove the atmosphere from a Neptune/sub-Neptune-like planet but has little effect on the total mass of a hot Jupiter. 
+However, RLO is not the only process that removes planetary mass -- short-period gas giants are also prone to photoevaporative mass loss, in which heating of a planet's upper atmosphere by X-ray and ultraviolet (XUV) drives a hydrodynamic outflow  \cite{VidalMadjar2003Extended} \DIFaddbegin \DIFadd{\mbox{%DIFAUXCMD
+\cite{2014ApJ...783...54K}}%DIFAUXCMD
+}\DIFaddend . Several studies, including \cite{Lopez2013Role}, have shown that this evaporative mass loss can completely remove the atmosphere from a Neptune/sub-Neptune-like planet but has little effect on the total mass of a hot Jupiter. 
 
 \cite{Erkaev2007Roche} provided a useful parameterization for energy-limited evaporative mass loss $\dot{M}_{\rm p, evap}$ incorporating the effect of tides:
 \begin{equation}
@@ -499,7 +498,7 @@ Figure \ref{fig:P_vs_PRoche-max} does not show a clear clustering of planets alo
 By investigating the evolution of bulk density for a disrupting gas giant, we have constructed a simple model of orbital evolution during Roche lobe overflow (RLO) and sought remnant cores amongst the observed population of short-period planets. We have confirmed the results of \cite{2015ApJ...813..101V} that the degree of orbital expansion accompanying RLO is directly related to the mass of remaining planet. We have also expanded those results to argue that the core mass of the disrupting gas giant dominates the maximum orbital period reached during RLO, with the initial planetary mass, orbit, and the rates of orbital evolution and mass transfer playing important but secondary roles. This approach has the benefit of providing specific observational predictions.
 
 As useful as our analysis here may be, it involves several important approximations and assumptions. \DIFdelbegin \DIFdel{For instance}\DIFdelend \DIFaddbegin \DIFadd{Foremost}\DIFaddend , we have assumed \DIFdelbegin \DIFdel{completely conservative mass transfer , meaning orbital angular momentum is conserved during RLO. This assumption allows us to circumvent the unknown tidal dissipation parameters $Q_\star$ and the efficiency for angular momentum transfer between the disrupting planet and the accretion disk but means we have neglected the effect of the related timescales, which can important }\DIFdelend \DIFaddbegin \DIFadd{the mass transfer is stable. However, unstable mass transfer may be quite important for some systems. \mbox{%DIFAUXCMD
-\cite{} }%DIFAUXCMD
+\cite{2012MNRAS.425.2778M} }%DIFAUXCMD
 pointed out that, for planets with densities in a specific range, the Roche limit may lie very near but still outside the host star. In these cases, significant angular momentum may be lost from the orbit since the innermost edge of the accretion disk orbits very near the host star's surface. If it applies, such a scenario may account for the emerging population of very short period planets}\DIFaddend . 
 \DIFdelbegin \DIFdel{Fortunately, the maximum orbital period reached by a disrupting gas giant should not depend on the mass transfer rate itself, but only on the planet's mass-radius relation (assuming the transfer is stable), as evidenced by agreement between our results in Section \ref{sec:RLO_Results_from_MESA} and those in \mbox{%DIFAUXCMD
 \cite{2015ApJ...813..101V}}%DIFAUXCMD

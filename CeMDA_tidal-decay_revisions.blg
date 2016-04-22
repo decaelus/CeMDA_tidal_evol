@@ -5,45 +5,45 @@ The style file: spmpsci.bst
 Database file #1: CeMDA_tidal-decay.bib
 Warning--I didn't find a database entry for ""
 Warning--missing publisher in MurrayDermott1999
-You've used 63 entries,
+You've used 64 entries,
             2946 wiz_defined-function locations,
-            1120 strings with 22428 characters,
-and the built_in function-call counts, 56130 in all, are:
-= -- 6455
-> -- 1746
+            1127 strings with 22674 characters,
+and the built_in function-call counts, 56540 in all, are:
+= -- 6489
+> -- 1758
 < -- 0
-+ -- 958
-- -- 648
-* -- 2989
-:= -- 5902
-add.period$ -- 179
-call.type$ -- 63
-change.case$ -- 512
++ -- 963
+- -- 652
+* -- 3014
+:= -- 5960
+add.period$ -- 182
+call.type$ -- 64
+change.case$ -- 517
 chr.to.int$ -- 0
-cite$ -- 64
-duplicate$ -- 5906
-empty$ -- 3146
-format.name$ -- 707
-if$ -- 11320
+cite$ -- 65
+duplicate$ -- 5948
+empty$ -- 3182
+format.name$ -- 712
+if$ -- 11406
 int.to.chr$ -- 0
-int.to.str$ -- 63
-missing$ -- 819
-newline$ -- 376
-num.names$ -- 126
-pop$ -- 2204
+int.to.str$ -- 64
+missing$ -- 829
+newline$ -- 382
+num.names$ -- 128
+pop$ -- 2217
 preamble$ -- 1
-purify$ -- 450
+purify$ -- 454
 quote$ -- 0
-skip$ -- 2738
+skip$ -- 2746
 stack$ -- 0
-substring$ -- 2293
-swap$ -- 5041
+substring$ -- 2298
+swap$ -- 5064
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 250
+type$ -- 254
 warning$ -- 1
-while$ -- 242
-width$ -- 65
-write$ -- 866
+while$ -- 244
+width$ -- 66
+write$ -- 880
 (There were 2 warnings)
