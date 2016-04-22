@@ -1,0 +1,554 @@
+% This is a general template file for the LaTeX package SVJour3
+%DIF LATEXDIFF DIFFERENCE FILE
+%DIF DEL CeMDA_tidal-decay_original_submission.tex   Mon Feb 29 21:42:34 2016
+%DIF ADD CeMDA_tidal-decay_first_resubmission.tex    Fri Apr 22 17:49:22 2016
+% for Springer journals. Original by Springer Heidelberg, 2010/09/16
+%
+% Use it as the basis for your article. Delete % signs as needed.
+%
+% This template includes a few options for different layouts and
+% content for various journals. Please consult a previous issue of
+% your journal as needed.
+%
+\RequirePackage{fix-cm}
+%
+\documentclass{svjour3}                     % onecolumn (standard format)
+%\documentclass[smallcondensed]{svjour3}     % onecolumn (ditto)
+%\documentclass[smallextended]{svjour3}       % onecolumn (second format)
+%\documentclass[twocolumn]{svjour3}          % twocolumn
+%
+\smartqed  % flush right qed marks, e.g. at end of proof
+%
+\usepackage{graphicx}
+\usepackage{comment}
+%
+% insert here the call for the packages your document requires
+\usepackage{mathptmx}      % use Times fonts if available on your TeX system
+\usepackage{latexsym}
+\usepackage{amsmath}
+\usepackage{amssymb}
+%\usepackage[printwatermark]{xwatermark}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{lipsum}
+
+% etc.
+%
+% please place your own definitions here and don't use \def but
+% \newcommand{}{}
+
+\newcommand{\tess}{\emph{TESS}}
+\newcommand{\kepler}{\emph{Kepler}}
+\newcommand{\corot}{\emph{CoRoT}}
+\newcommand{\ktwo}{\emph{K2}}
+
+%
+% Insert the name of "your journal" with
+\journalname{Celestial Mechanics and Dynamical Astronomy}
+%
+
+%\newwatermark[allpages,color=red!50,angle=45,scale=3,xpos=0,ypos=0]{DRAFT}
+%DIF PREAMBLE EXTENSION ADDED BY LATEXDIFF
+%DIF UNDERLINE PREAMBLE %DIF PREAMBLE
+\RequirePackage[normalem]{ulem} %DIF PREAMBLE
+\RequirePackage{color}\definecolor{RED}{rgb}{1,0,0}\definecolor{BLUE}{rgb}{0,0,1} %DIF PREAMBLE
+\providecommand{\DIFadd}[1]{{\protect\color{blue}\uwave{#1}}} %DIF PREAMBLE
+\providecommand{\DIFdel}[1]{{\protect\color{red}\sout{#1}}}                      %DIF PREAMBLE
+%DIF SAFE PREAMBLE %DIF PREAMBLE
+\providecommand{\DIFaddbegin}{} %DIF PREAMBLE
+\providecommand{\DIFaddend}{} %DIF PREAMBLE
+\providecommand{\DIFdelbegin}{} %DIF PREAMBLE
+\providecommand{\DIFdelend}{} %DIF PREAMBLE
+%DIF FLOATSAFE PREAMBLE %DIF PREAMBLE
+\providecommand{\DIFaddFL}[1]{\DIFadd{#1}} %DIF PREAMBLE
+\providecommand{\DIFdelFL}[1]{\DIFdel{#1}} %DIF PREAMBLE
+\providecommand{\DIFaddbeginFL}{} %DIF PREAMBLE
+\providecommand{\DIFaddendFL}{} %DIF PREAMBLE
+\providecommand{\DIFdelbeginFL}{} %DIF PREAMBLE
+\providecommand{\DIFdelendFL}{} %DIF PREAMBLE
+%DIF END PREAMBLE EXTENSION ADDED BY LATEXDIFF
+
+\begin{document}
+
+\title{Tidal Decay and Disruption of Short-Period Gaseous Exoplanets
+%\thanks{}
+}
+% Grants or other notes about the article that should go on the front
+% page should be placed within the \thanks{} command in the title
+% (and the %-sign in front of \thanks{} should be deleted)
+%
+% General acknowledgments should be placed at the end of the article.
+
+%\subtitle{Do you have a subtitle?\\ If so, write it here}
+
+\titlerunning{Tidal Decay and Disruption of Gaseous Exoplanets}        % if too long for running head
+
+\author{Brian Jackson		\and
+        Emily Jensen		\and
+        Sarah Peacock		\and
+        Phil Arras			\and
+        Kaloyan Penev
+}
+
+%\authorrunning{Short form of author list} % if too long for running head
+
+\institute{Brian Jackson \at
+		Boise State University, Dept. of Physics\DIFaddbegin \DIFadd{,
+		}\DIFaddend 1910 University Drive, Boise ID 83725 USA\\
+        \email{bjackson@boisestate.edu}        
+        \and
+		Emily Jensen \at
+		Boise State University, Dept.\ of Physics\DIFaddbegin \DIFadd{,
+		}\DIFaddend 1910 University Drive, Boise ID 83725 USA
+        \and
+		Sarah Peacock \at
+		Lunar and Planetary Laboratory, University of Arizona\DIFaddbegin \DIFadd{,
+		}\DIFaddend 1629 E University Blvd, Tucson, AZ 85721-0092
+		\and
+		Phil Arras \at
+		Department of Astronomy, University of Virginia\DIFaddbegin \DIFadd{,
+        }\DIFaddend Charlottesville, VA 22904-4325, USA
+		\and
+		Kaloyan Penev \at
+		Department of Astrophysical Sciences, Princeton University, NJ 08544, USA
+}
+
+\date{Received: date / Accepted: date}
+% The correct dates will be entered by the editor
+
+\maketitle
+
+\begin{abstract}
+Many gaseous exoplanets in short-period orbits are on the verge or are
+in the process of tidal disruption. Moreover, orbital stability analysis shows tides can drive many hot Jupiters to spiral \DIFaddbegin \DIFadd{inevitably }\DIFaddend toward their host stars. Thus, the coupled processes of orbital evolution and tidal disruption likely shape the observed distribution of close-in exoplanets and may even be responsible for producing some of the short-period rocky planets. However, the exact outcome for a disrupting planet depends on its internal response to mass loss, and the accompanying orbital evolution can act to enhance or inhibit the disruption process. In this study, we apply the fully-featured and robust Modules for Experiments in Stellar Astrophysics (MESA) suite to model Roche-lobe overflow (RLO) of short-period gaseous planets. We show that, although the detailed evolution may depend on several properties of the planetary system, it is largely determined by the core mass of the disrupting gas giant. In particular, we find that the orbital expansion that accompanies RLO often stops and reverses at a specific maximum period that depends on the core mass. We suggest that RLO may often strand the remnant of a disrupted gas giant near this orbital period, which provides an observational prediction that can corroborate the hypothesis that short-period gas giants undergo RLO. We conduct a preliminary comparison of this prediction to the observed population of small, short-period planets and find some planets in orbits that may be consistent with this picture. To the extent that we can establish some short-period planets are indeed the remnants of disrupted gas giants, that population can elucidate the properties of gas giant cores, the properties of which remain largely unconstrained.
+\keywords{extrasolar planets \and atmosphere \and tidal forces}
+\PACS{97.82.-j \and 96.15.Hy \and 96.15.Wx}
+\end{abstract}
+
+\section{Introduction}
+\label{sec:introduction}
+
+\begin{figure}
+\includegraphics[width=\textwidth]{P-PRoche}
+\caption{Among planets with orbital \DIFdelbeginFL \DIFdelFL{period }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{periods }\DIFaddendFL $P \le $ 10 days, planetary radius $R_{\rm p}$ in Earth radii ($R_{\rm Earth}$) vs. the ratio of \DIFdelbeginFL \DIFdelFL{orbital period }\DIFdelendFL $P$ to the planet's Roche period $P_{\rm Roche}$, with $P_{\rm Roche, 0} =$ 9.6 hours for planets comprised of highly compressible fluid \DIFdelbeginFL \DIFdelFL{. The }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{(also shown with the leftmost }\DIFaddendFL dashed, vertical line\DIFaddbeginFL \DIFaddFL{). The rightmost vertical line }\DIFaddendFL shows $P_{\rm Roche, 0} =$ 12.6 hours \DIFaddbeginFL \DIFaddFL{(}\DIFaddendFL for planets comprised of incompressible fluid with negligible bulk tensile strength\DIFaddbeginFL \DIFaddFL{)}\DIFaddendFL . Data harvested from exoplanets.org on 2015 Dec 7.}
+\label{fig:P-PRoche}
+\end{figure}
+
+%2015 Dec 15 -- 
+%  Calculated 30% ( = 580/1997) using exoplanet archive. The denominator
+%  comes from filtering "Disposition Using Kepler Data" with "candidate"
+%  and "Planetary Radius" using "between 2 and 32". The numerator 
+%  involves the additional filter "Orbital Period" of "< 10".
+From wispy gas giants on the verge of tidal disruption\footnote{Throughout this article, when we refer to tidal disruption of a gaseous planet, we mean the process of removing its atmosphere.} to tiny rocky bodies already falling apart, extrasolar (or exo-) planets with orbital periods of several days and less challenge theories of planet formation and evolution. Although they are statistically rare, most current survey techniques favor their detection, and the population of known short-period planets has grown dramatically over the years. For example, among stars targeted by the \kepler\ Mission, \cite{Howard2010Occurrence} estimated 3.4$\pm$0.3\% of the GK dwarfs host planets with radii between 2 and 32 times the Earth's ${\rm R_{Earth}}$, and periods $P <$ 10 days, while almost 30\% of all \kepler's candidates lie within those ranges. 
+
+%Origins of short-period planets unclear
+Figure \ref{fig:P-PRoche} shows the radii $R_{\rm p}$ and orbital periods $P$ of short-period planets and how close they are to their Roche limits. \cite{Rappaport2013Roche} cast the classic Roche limit for a low-mass companion as a period $P_{\rm Roche}$ that only depends on a planet's density $\rho_{\rm p}$: $P_{\rm Roche} = P_{\rm Roche, 0} \left( 1\ {\rm g\ cm^{-3}} / \rho_{\rm p} \right)^{1/2}$. For planets comprised of highly compressible fluid, $P_{\rm Roche, 0} =$ 9.6 hours, while for planets comprised of incompressible fluid with negligible bulk tensile strength, $P_{\rm Roche, 0} =$ 12.6 hours. The x-axis of Figure \ref{fig:P-PRoche} assumes $P_{\rm Roche, 0} =$ 9.6 hours for all planets. \cite{Rappaport2013Roche} explored deviations from the simple $P_{\rm Roche}$ expression used here. 
+
+The distribution of orbits for hot Jupiters extends to very near the planets' Roche limits, indicating that at least some hot Jupiters are on the verge of tidal disruption. Others may actually be in the process of disruption. For example, \cite{2010Natur.463.1054L} pointed out that WASP-12 b, a hot Jupiter in a 19-hour orbit, may be undergoing disruption since its hot atmosphere likely extends up to planet's Roche lobe, even though the photosphere does not. 
+
+Since the vast majority of short-period planets have circular orbits and probably synchronized rotation, tides raised on the planets by the stars have no effect on the orbital evolution, but for stars that are not tidally locked to their planets, tides raised on the stars by the planets can drive orbital evolution, long after eccentricities drop to zero. In cases where the host star rotates more slowly than the planet revolves, tides raised on the star lag the planet, and the resulting gravitational pull on the planet of this bulge reduces mechanical energy and transfers angular momentum from the orbit to the star's rotation, driving orbital decay \cite{2008CeMDA.101..171F}. In fact, the vast majority of known planet-hosting stars rotate more slowly than their close-in planetary companion and so fall into this category. An interesting exception is the $\tau$ Boo system, where the star may be tidally locked to the planet \cite{2008A&A...482..691W}. The HAT-P-11 system is also noteworthy for a possible 6:1 commensurability between the orbital and stellar rotation periods\DIFaddbegin \DIFadd{, as discussed in \mbox{%DIFAUXCMD
+\cite{2014ApJ...788....1B}}%DIFAUXCMD
+}\DIFaddend .
+
+Energy and angular momentum considerations of tidal interaction indicate that many hot \DIFdelbegin \DIFdel{Jupiters }\DIFdelend \DIFaddbegin \DIFadd{Jupiter }\DIFaddend systems in circular orbits are formally unstable against tidal decay \cite{1973ApJ...180..307C}. \cite{2009ApJ...692L...9L} pointed out that most hot Jupiter systems known at that time have insufficient angular momentum to reach a stable tidal equilibrium, although more recently, \cite{2015MNRAS.446.3676A} looked again and decided that many, but not most, hot Jupiters are unstable. Thus, at least some fraction of hot Jupiter systems will inevitably spiral toward their host stars. 
+
+Whether the systems will spiral inward in less than the main sequence lifetimes of the host stars is not clear, however. The rate of in-spiral depends in part on the efficiency with which tidal energy is dissipated within the host stars, often parameterized by an efficiency parameter $Q_\star$, and the dissipation processes within stars that set $Q_\star$ are not well-understood. Theoretical studies make a variety of predictions regarding the nature and efficiency of tidal dissipation within stars. \cite{2016ApJ...816...18E} predicts a rich but complex dependence of dissipation on the tidal frequencies, and much work, including \cite{2007ApJ...655.1166P}, suggests dissipation primarily occurs within a star's convective zone. Therefore, stars with deeper convective zones (i.e., cooler stars) should exhibit greater tidal dissipation \DIFaddbegin \DIFadd{efficiency}\DIFaddend . 
+
+Estimates for effective $Q_\star$ derive from this wide body of work and range from $10^5$ \cite{1996Natur.380..606L,2016ApJ...816...18E} up to $10^9$ and larger \cite{2011ApJ...731...67P}. Larger $Q_\star$-values correspond to slower tidal evolution rates, and assuming frequency-independence \cite{1966Icar....5..375G}, this range of $Q_\star$ indicates tides would take between 2 Myrs and 20 Gyrs to drive a Jupiter-like planet around a Sun-like star from a period of 1 day to its Roche limit ($\sim$ 8 hours).
+
+We can appeal to additional observations for constraints on the degree of tidal evolution among short-period planets. \cite{2013ApJ...775L..11M} found that, among the many \kepler\ targets for which rotation periods have been estimated, short-period planets are less commonly observed transiting the most rapidly rotating stars. This observation is qualitatively consistent with the idea that planets that have been accreted by their star via tidal decay deposited significant angular momentum in the host stars' outer envelope, giving them unusually high rotation rates \cite{2009ApJ...698.1357J}. 
+
+\cite{2014A&A...565L...1P} sought the signature of tidal interactions by comparing members of stellar binaries in which one of the stars hosts a short-period planet and the other does not. They estimated \DIFdelbegin \DIFdel{x-ray }\DIFdelend \DIFaddbegin \DIFadd{X-ray }\DIFaddend activity (which scales with stellar rotation rate) for several widely separated binary stars and found that those stars with relatively deep convective zones exhibited enhanced \DIFdelbegin \DIFdel{x-ray }\DIFdelend \DIFaddbegin \DIFadd{X-ray }\DIFaddend activity, and hence more rapid rotation, than expected based on the \DIFdelbegin \DIFdel{x-ray }\DIFdelend \DIFaddbegin \DIFadd{X-ray }\DIFaddend activity of the partner stars without planets. \cite{2015ApJ...807...78F} studied some of these systems and found that the enhanced rotation rates for the planet-hosting stars pointed to substantial tidal decay of the accompanying planets. 
+
+The period distribution of planets very close to their host stars may also point to non-negligible tidal decay. Figure \ref{fig:P-vs-Mstar} plots the periods for many short-period planets against the masses estimated for their host stars. Also shown as yellow lines are the periods corresponding to the stellar surfaces at 3 and 10 Myrs after formation, as modeled by the Modules for Experiments in Stellar Astrophysics suite (MESA) \cite{2011ApJS..192....3P}. One hypothesis for the origins of short-period planets involves migration while the planets are embedded within the protoplanetary gas disk \cite{2009AREPS..37..321C}, and so that evolution must have occurred within the disk lifetime. Disk lifetimes are thought to be less than 10 Myrs \cite{2013MNRAS.434..806B}. Many of the planets shown actually lie within the region occupied by their host star at such early times, which argues that the planets arrived at their orbits long afterward. Late-stage tidal decay of their orbits is an obvious explanation, although that evolution may have resulted from excitation of orbital eccentricity by additional planets and tidal dissipation within the planet \cite{2014PhDT.........4V} and not within the star. 
+
+\begin{figure}
+\includegraphics[width=\textwidth]{P-vs-Mstar}
+\caption{Orbital periods $P$ vs. host star mass $M_\star$ for many short-period planets. The yellow lines show the periods corresponding to the stellar surface at 3 and 10 Myrs after stellar formation as modeled using MESA \cite{2011ApJS..192....3P}. The data for this plot were harvested from exoplanets.org on 2015 Jul 8.}
+\label{fig:P-vs-Mstar}
+\end{figure}
+
+An alternative origin scenario involves the dynamical excitation of a planet's orbital eccentricity to values near unity, giving a planet formed in a more distant orbit a pericenter distance close enough that tides can circularize and shrink the orbit \cite{2007ApJ...669.1298F,2011ApJ...735..109W}. The smallest pericenter allowed for such a planet is its Roche limit, and so \cite{2006ApJ...638L..45F} pointed out that, since tidal damping within the planet should nearly conserve the orbital angular momentum, the smallest semi-major axis $a$ at which the orbits would circularize is twice the planet's Roche limit. Using the same population as in Figure \ref{fig:P-vs-Mstar}, Figure \ref{fig:a-aRoche} shows each planet's $a$ and the semi-major axis for its Roche limit $a_{\rm Roche}$. \DIFaddbegin \DIFadd{($a_{\rm Roche}$ was estimated from the available system parameters using data harvested from exoplanets.org on 2015 Jul 8.) }\DIFaddend The vast majority of planets lie outside $2\times a_{\rm Roche}$, but a small cluster of the short-period planets actually lies within. If those planets originated in the way described here, then their presence interior to $2\times a_{\rm Roche}$ can be explained by tidal decay of their orbits subsequent to their arrival into short-period orbits.
+
+\begin{figure}
+\includegraphics[width=\textwidth]{a-aRoche}
+\caption{The blue circles represent the ratio of a planet's orbital semi-major axis $a$ to its Roche limit $a_{\rm Roche}$. The horizontal blue lines shows the expected minimum ratio for planets having become close-in via circularization of a highly eccentric orbit \cite{2006ApJ...638L..45F}. The data for this plot were harvested from exoplanets.org on 2015 Jul 8.}
+\label{fig:a-aRoche}
+\end{figure}
+
+This body of circumstantial evidence suggests at least some close-in exoplanets undergo significant orbital decay and eventually mass transfer to the host star once they encounter their Roche limits, but what happens to the disrupting planets? How long does the disruption process take, and are the remnants hidden amongst the currently observed population of close-in planets? Do the remnants have physical or orbital properties that could distinguish them? 
+
+As for binary star systems, the \DIFdelbegin \DIFdel{timescale }\DIFdelend \DIFaddbegin \DIFadd{timescales }\DIFaddend of disruption and accompanying orbital evolution depend very sensitively on the mass-radius relationship for the planets undergoing disruption \cite{Rappaport1982}. Recently, \cite{2014ApJ...793L...3V} and \cite{2015ApJ...813..101V} applied state-of-the-art planetary mass-radius relationships to investigate the outcomes of mass transfer for hot Jupiter systems for a range of assumptions about the details of the mass transfer. As we explain in Section \ref{sec:dynamics_of_planetary_rochelobe_overflow}, those studies found mass transfer can drive significant orbital expansion for a planet overflowing its Roche lobe, often stranding a remnant planetary core in an orbital period of several days, far from the Roche limit for the progenitor planet. The latter study also found an anti-correlation between the remnant mass and orbital period and argued that many of the small planetary objects recently discovered \DIFdelbegin \DIFdel{\mbox{%DIFAUXCMD
+\cite{2014ApJ...787...47S} }%DIFAUXCMD
+}\DIFdelend in ultra-short periods ($<$ 1 day) \DIFaddbegin \DIFadd{\mbox{%DIFAUXCMD
+\cite{2014ApJ...787...47S,2016arXiv160306488A} }%DIFAUXCMD
+}\DIFaddend are too close-in to be the remnants of disrupted hot Jupiters.
+
+In this study, we re-visit the planetary mass transfer process, building on those previous studies to explore the orbital periods expected for the remnants of disrupted hot Jupiters. We also suggest that the remnants may appear as gas-rich super-Earth/sub-Neptunes with orbital periods that depend sensitively on the mass of the planet's solid core and with unusually low-density atmospheres. Our \DIFdelbegin \DIFdel{focus }\DIFdelend \DIFaddbegin \DIFadd{goal }\DIFaddend here is to develop specific theoretical predictions that can then be compared in detail to observations. We make a preliminary attempt at this comparison as well.
+
+\DIFaddbegin \DIFadd{We focus here on stable mass transfer, which requires specific relationships between the details of the mass transfer and the response of the disrupting planet to mass loss. Unstable mass transfer involves rapid disruption and accretion of a planet on timescales comparable to the orbital period \mbox{%DIFAUXCMD
+\cite{2002ApJ...565.1107P} }%DIFAUXCMD
+and may also be important in some cases. We briefly discuss the conditions required for stable transfer in Section \ref{sec:dynamics_of_planetary_rochelobe_overflow} and leave unstable transfer for future work.
+}
+
+\DIFaddend The plan for this paper is as follows: In Section \ref{sec:dynamics_of_planetary_rochelobe_overflow}, we review the dynamics of mass transfer or Roche-lobe overflow, with approximations tailored for planetary systems. In Section \ref{sec:RLO_Results_from_MESA}, we present the results of a large suite of evolution calculations using MESA. In Section \ref{sec:Evolution_of_the_Roche_Limit_for_a_Disrupting_Gaseous_Planet}, we explore a simple relationship between the core mass for a remnant and its orbital period and compare that prediction to observations. Finally, in Section \ref{sec:Discussion_and_Conclusions}, we conclude and discuss future work.
+
+\section{Dynamics of Planetary Roche-Lobe Overflow}
+\label{sec:dynamics_of_planetary_rochelobe_overflow}
+In considering the dynamics of gas giants undergoing RLO, we make several assumptions, among which the most important are the following:
+
+ \begin{enumerate} 
+\item \DIFdelbegin \DIFdel{Mass transfer completely conserves angular momentum, in which case gas }\DIFdelend \DIFaddbegin \DIFadd{Gas }\DIFaddend escaping the planet \DIFaddbegin \DIFadd{likely }\DIFaddend forms a thin accretion disk around the star and \DIFdelbegin \DIFdel{rapidly transfers }\DIFdelend \DIFaddbegin \DIFadd{transfers some or }\DIFaddend all of its angular momentum back to the planet before falling onto the star. \DIFaddbegin \DIFadd{We assume that the fraction of angular momentum lost from the orbit remains fixed. In reality, this fraction likely depends on a number of evolving properties of the system, including the planet's orbital period.
+}\DIFaddend 
+
+\item The planet has a circular orbit with a mean motion larger than the host star's rotational frequency and the total angular momentum of the planet-star system lies below the critical threshold for tidal equilibrium. As a result, the tide raised on the star lags behind the planet and tends to transfer angular momentum from the orbit to the stellar rotation, but tides cannot synchronize the star's rotation to the orbit.
+
+ \end{enumerate} 
+
+With these assumptions, we follow a simplified version of the derivation described in \cite{Rappaport1982} \DIFdelbegin \DIFdel{, along with some modifications specific to planet-star systems}\DIFdelend \DIFaddbegin \DIFadd{and \mbox{%DIFAUXCMD
+\cite{2015ApJ...813..101V}}%DIFAUXCMD
+}\DIFaddend . The orbital angular momentum $J$ is given approximately as 
+
+\begin{equation}
+J \approx M_{\rm p} \sqrt{G M_{\star} a},
+\label{eqn:orbital_angular_momentum}
+\end{equation}
+where $M_{\rm p}$ is the planet's mass, $M_\star$ the star's mass, $G$ Newton's gravitational constant, and $a$ is the orbital semi-major axis. A change in angular momentum can arise from changes in $a$ or $M_{\rm p}$ (since $M_{\rm p} \ll M_{\star}$, we neglect changes to $M_{\star}$):
+\DIFdelbegin %DIFDELCMD < \begin{equation}
+%DIFDELCMD < \left( \frac{\dot{a}}{a} \right) = 2 \left( \frac{\dot{J}}{J} \right) - 2\left( \frac{\dot{M}_{\rm p, RLO}}{M_{\rm p}} \right).
+%DIFDELCMD < \label{eqn:change_in_orbital_angular_momentum}
+%DIFDELCMD < \end{equation}
+%DIFDELCMD < %%%
+\DIFdelend \DIFaddbegin \begin{equation}
+\frac{dJ}{dt} = \left(\frac{\partial J}{\partial t}\right)_{\rm tides} + \left(\frac{\partial J}{\partial t}\right)_{\rm \dot{M}_{\rm p}}.
+\label{eqn:change_in_orbital_angular_momentum}
+\end{equation}
+\DIFaddend 
+
+We consider Darwin's model for tidal interaction and assume tidal dissipation can be modeled with a frequency-independent efficiency parameter for the star $Q_{\star}$ into which we have absorbed the stellar Love number \cite{Jackson2008Tidal}. There are many alternative formulations which involve more sophisticated assumptions about the nature of tidal dissipation and stellar internal structure (e.g., \cite{Essick2015Orbital}), but using a different tidal model would \DIFaddbegin \DIFadd{probably only }\DIFaddend modify the timescales for dynamical evolution and not substantially alter our results. 
+\DIFdelbegin \DIFdel{The tidal interaction is the only process that significantly modifies the }\DIFdelend \DIFaddbegin \begin{equation}
+\frac{1}{J}\left(\frac{\partial J}{\partial t}\right)_{\rm tides} = -\frac{9}{4} \left( \frac{G}{M_{\star}} \right)^{1/2} \frac{R_{\star}^5 M_{\rm p}}{Q_{\star}} a^{-13/2},
+\label{eqn:tidal_decay}
+\end{equation}
+\DIFadd{where $R_{\star}$ is the stellar radius.
+}
+
+\DIFadd{Mass escaping the planet forms an accretion disk somewhat interior to the planet's orbit, at radius $\gamma^2 a$, giving the disk a specific }\DIFaddend orbital angular momentum \DIFdelbegin \DIFdel{in the case of conservative RLO, so
+}%DIFDELCMD < \begin{equation}
+%DIFDELCMD < \left( \frac{\dot{J}}{J} \right) = -\frac{9}{4} \left( \frac{G}{M_{\star}} \right)^{1/2} \frac{R_{\star}^5 M_{\rm p}}{Q_{\star}} a^{-13/2},
+%DIFDELCMD < \label{eqn:tidal_decay}
+%DIFDELCMD < \end{equation}
+%DIFDELCMD < %%%
+\DIFdel{where $R_{\star}$ is the stellar radius. }\DIFdelend \DIFaddbegin \DIFadd{$\gamma \sqrt{G M_{\rm \star} a}$. Some fraction $\delta$ of that disk mass may be lost to the system before transferring its angular momentum back to the planet's orbit, reducing the orbital angular momentum at a rate
+}\begin{equation}
+\frac{1}{J}\left(\frac{\partial J}{\partial t}\right)_{\rm \dot{M}_{\rm p}} = \delta \gamma J \left( \frac{\dot{M_{\rm p}}}{M_{\rm p}} \right).
+\label{eqn:loss_of_angular_momentum_from_system}
+\end{equation}
+\DIFaddend 
+
+\DIFaddbegin \DIFadd{The time derivative of $J$ can also be written as 
+}\begin{eqnarray}
+\DIFadd{\frac{1}{J}\frac{dJ}{dt} }& \DIFadd{\approx }& \DIFadd{\frac{1}{J} \left(\frac{\partial J}{\partial M_{\rm p}}\right)_{\rm M_{\rm \star}, a} \dot{M}_{\rm p} + \frac{1}{J} \left(\frac{\partial J}{\partial a}\right)_{\rm M_{\rm \star}, M_{\rm p}} \dot{a} \nonumber }\\
+& \DIFadd{= }& \DIFadd{\left( \frac{\dot{M_{\rm p}}}{M_{\rm p}} \right) + \frac{1}{2} \left( \frac{\dot{a}}{a} \right),
+\label{eqn:change_in_angular_momentum}
+}\end{eqnarray}
+\DIFadd{where we have ignored the effect of the change in the star's mass on $J$. Setting the two expressions for $\dot{J}/J$ equal and solving for $\dot{a}/a$ gives
+}\begin{equation}
+\left(\frac{\dot{a}}{a}\right) = -2 \left(1 - \delta \gamma \right) \left( \frac{\dot{M}_{\rm p}}{M_{\rm p}}\right) + \frac{2}{J} \left( \frac{\partial J}{\partial t}\right)_{\rm tides}.
+\label{eqn:initial_dadt}
+\end{equation}
+
+\DIFaddend In our scenario, a hot Jupiter has its orbit decay according to Equation \ref{eqn:tidal_decay} until it comes into Roche-lobe contact, at which point 
+
+\begin{equation}
+R_{\rm p} = R_{\rm Roche},
+\label{eqn:Rp_RRoche_equality}
+\end{equation}
+where $R_{\rm Roche}$ is given by 
+\begin{equation}
+R_{\rm Roche} = f \left( M_{\rm p}/M_{\star} \right)^{1/3} a
+\label{eqn:RRoche}
+\end{equation}
+and $f\ (\sim 1)$ incorporates details of the planet's internal structure and constitution (cf. \cite{MurrayDermott1999}). 
+
+\DIFdelbegin \DIFdel{Since the escaping gas leaves the planet with some non-zero angular momentum, it can form a thin accretion disk around the star. }\DIFdelend Torques between the planet and disk, along with viscous dissipation within the disk, \DIFdelbegin \DIFdel{can }\DIFdelend act in the opposite direction as the torque from the tide raised on the star \DIFaddbegin \DIFadd{\mbox{%DIFAUXCMD
+\cite{1979MNRAS.186..799L}}%DIFAUXCMD
+}\DIFaddend . Mass loss would choke off if the planet were no longer filling its Roche lobe, so the disk torque cannot push the planet outward of its Roche limit. At the same time, if the tide raised on the host star were to drive the planet inward through its Roche limit, the degree to which the planet overfilled its Roche lobe would increase, significantly increasing the rate of mass loss \cite{Ritter1988Turning}, the amount of mass in the accretion disk, and thus the strength of the outward torque. Consequently, in the case of stable RLO, a balance develops between the tidal and gas torques \cite{Priedhorsky1988Tidal}, and $R_{\rm Roche}$ is held very nearly equal to $R_{\rm p}$. 
+
+We can work out how the planet's orbit evolves during RLO by differentiating Equation \ref{eqn:Rp_RRoche_equality} and incorporating Equations \ref{eqn:change_in_orbital_angular_momentum} and \ref{eqn:RRoche}:
+\begin{eqnarray}
+\DIFaddbegin \DIFadd{\xi }\DIFaddend \left( \DIFdelbegin \DIFdel{\frac{\partial \ln R_{\rm p}}{\partial \ln M_{\rm p}} }\DIFdelend \DIFaddbegin \DIFadd{\frac{\dot{M}_{\rm p}}{M_{\rm p}} }\DIFaddend \right) \DIFdelbegin %DIFDELCMD < \left( %%%
+\DIFdel{\frac{\dot{M}_{\rm p, RLO}}{M_{\rm p}} }%DIFDELCMD < \right) %%%
+\DIFdelend + \left( \frac{\partial \ln R_{\rm p}}{\partial t} \right)\DIFaddbegin \DIFadd{_{\rm M_{\rm p}} }\DIFaddend & = & \left( \frac{\dot{a}}{a} \right) + \frac{1}{3} \left( \DIFdelbegin \DIFdel{\frac{\dot{M}_{\rm p, RLO}}{M_{\rm p}} }\DIFdelend \DIFaddbegin \DIFadd{\frac{\dot{M}_{\rm p}}{M_{\rm p}} }\DIFaddend \right) \nonumber \\ 
+& = & \DIFdelbegin \DIFdel{2 }\DIFdelend \DIFaddbegin \DIFadd{-2 }\DIFaddend \left(\DIFdelbegin \DIFdel{\frac{\dot{J}}{J} }%DIFDELCMD < \right) %%%
+\DIFdelend \DIFaddbegin \DIFadd{1 }\DIFaddend - \DIFdelbegin \DIFdel{\frac{5}{3} }\DIFdelend \DIFaddbegin \DIFadd{\delta \gamma }\right) \DIFaddend \left( \DIFdelbegin \DIFdel{\frac{\dot{M}_{\rm p, RLO}}{M_{\rm p}} }\DIFdelend \DIFaddbegin \DIFadd{\frac{\dot{M}_{\rm p}}{M_{\rm p}}}\DIFaddend \right) \DIFaddbegin \DIFadd{+ \frac{2}{J} }\left( \DIFadd{\frac{\partial J}{\partial t}}\right)\DIFadd{_{\rm tides}}\DIFaddend .
+\label{eqn:dRp_dt}
+\end{eqnarray}
+The first term on the left-hand side of Equation \ref{eqn:dRp_dt} incorporates the change in radius due to mass loss via RLO \DIFaddbegin \DIFadd{(with $\xi = \partial \ln R_{\rm p}/\partial \ln M_{\rm p}$)}\DIFaddend , while the second term involves any other change in radius.  
+
+Plugging in Equation \ref{eqn:tidal_decay} \DIFdelbegin \DIFdel{for $\dot{J}/J$ }\DIFdelend and re-arranging gives expressions for the \DIFdelbegin \DIFdel{RLO }\DIFdelend mass loss rate and the accompanying evolution of the semi-major axis:
+\DIFdelbegin %DIFDELCMD < \begin{equation}
+%DIFDELCMD < \left( \frac{\dot{M}_{\rm p, RLO}}{M_{\rm p}} \right) = - \eta^{-1} \left[ \frac{9}{2} \left( \frac{G}{M_{\star}} \right)^{1/2} \frac{R_{\star}^5 M_{\rm p}}{Q_{\star}} a^{-13/2} + \left( \frac{\partial \ln R_{\rm p}}{\partial t} \right) \right],
+%DIFDELCMD < \label{eqn:RLO_mass_loss_rate}
+%DIFDELCMD < \end{equation}
+%DIFDELCMD < \begin{equation}
+%DIFDELCMD < \left( \frac{\dot{a}}{a} \right) = \left( 2 \eta^{-1} - 1\right) \frac{9}{2} \left( \frac{G}{M_{\star}} \right)^{1/2} \frac{R_{\star}^5 M_{\rm p}}{Q_{\star}} a^{-13/2} + 2\eta^{-1} \left( \frac{\partial \ln R_{\rm p}}{\partial t} \right)
+%DIFDELCMD < \label{eqn:a_evolution_rate}
+%DIFDELCMD < \end{equation}
+%DIFDELCMD < %%%
+\DIFdel{where $\eta \equiv \left[ 5/3 + \left( \partial \ln R_{\rm p}/\partial \ln M_{\rm p} \right) \right]$}\DIFdelend \DIFaddbegin \begin{equation}
+\left( \frac{\dot{M}_{\rm p}}{M_{\rm p}} \right) = -\eta^{-1} \left[ \frac{9}{2} \left( \frac{G}{M_{\star}} \right)^{1/2} \frac{R_{\star}^5 M_{\rm p}}{Q_{\star}} a^{-13/2} + \left( \frac{\partial \ln R_{\rm p}}{\partial t} \right)_{\rm M_{\rm p}} \right],
+\label{eqn:RLO_mass_loss_rate}
+\end{equation}
+\begin{equation}
+\left( \frac{\dot{a}}{a} \right) = \eta^{-1} \left[\left( \frac{1}{3} - \xi \right) \frac{9}{4} \left( \frac{G}{M_{\star}} \right)^{1/2} \frac{R_{\star}^5 M_{\rm p}}{Q_{\star}} a^{-13/2} + \left( 1 - \delta \gamma \right) \left( \frac{\partial \ln R_{\rm p}}{\partial t} \right)_{\rm M_{\rm p}} \right],
+\label{eqn:a_evolution_rate}
+\end{equation}
+\DIFadd{where $\eta \equiv \xi/2 + 5/6 - \delta \gamma$}\DIFaddend . 
+Solving these equations together requires a numerical model that can account for the planetary and stellar evolution, which we implement using MESA below. 
+\DIFdelbegin \DIFdel{However, we can draw some qualitative conclusions regarding the evolution without solving them directly by applying a few approximations. }\DIFdelend 
+
+\DIFaddbegin \DIFadd{Of course, this derivation is predicated on the assumption that the mass loss remains stable, which requires $\eta > 0$. Otherwise, $\dot{M}_{\rm p}$ would pass through unphysically large (negative) values or even reverse sign. This requirement translates into
+}\begin{equation}
+\delta \gamma < \xi/2 + 5/6.
+\label{eqn:stability_condition}
+\end{equation}
+\DIFadd{This equation puts an upper limit on the fraction of angular momentum lost from the system during mass transfer and agrees with the result discussed in \mbox{%DIFAUXCMD
+\cite{2015ApJ...813..101V}}%DIFAUXCMD
+. For instance, consider $\gamma \approx 1$ (i.e., the accretion disk orbits very near the planet) and $\xi \approx 0$ (i.e. $R_{\rm p}$ is insensitive to $M_{\rm p}$ as we discuss next). In that case, no more than 5/6 (= $0.8\bar{3}$) of the mass escaping from the planet can be lost from the system without returning its angular momentum. Otherwise, $R_{\rm Roche}$ would decrease more slowly than $R_{\rm p}$, and mass loss would become unstable. For the suite of simulations they explored, \mbox{%DIFAUXCMD
+\cite{2015ApJ...813..101V} }%DIFAUXCMD
+found that $\delta \gamma$ larger than 0.6 to 0.8 (depending on the planet modeled) could result in unstable mass transfer, consistent with our discussion here. 
+}
+
+\DIFadd{Without solving the equations in detail, we can develop an intuition for how a disrupting hot Jupiter should evolve by applying several simplifications. }\DIFaddend First, assume the $\partial R_{\rm p}/\partial t$ \DIFdelbegin \DIFdel{terms }\DIFdelend in both equations are negligible -- \cite{Arras2006Thermal} calculated that, at ages $\geq$ 1 Gyrs, hot Jupiters take Gyrs more for their radii to contract by $\sim$ 10\%. Upon encountering its Roche limit, a hot Jupiter will begin losing mass to the star, and whether the orbit expands ($da/dt > 0$) or decays ($da/dt < 0$) depends on how \DIFdelbegin \DIFdel{$\left( 2 \eta - 1 \right)$ evolves. Setting $ \left( 2 \eta - 1 \right) = 0$ and rearranging gives $\partial \ln R_{\rm p}/\partial \ln M_{\rm p} = 1/3$. }\DIFdelend \DIFaddbegin \DIFadd{$\left( \frac{1}{3} - \xi \right)$ evolves. }\DIFaddend In other words, the evolution of the orbit depends on the evolution of the planet's density, as we might expect. For hot Jupiters, in fact, \DIFdelbegin \DIFdel{$\left( \partial \ln R_{\rm p}/\partial \ln M_{\rm p} \right) \sim 0$ }\DIFdelend \DIFaddbegin \DIFadd{$\xi \sim 0$ }\DIFaddend while $M_{\rm p} \sim 1\ {\rm M_{Jup}}$ \cite{Fortney2007Planetary}. 
+
+With these approximations, upon encountering its Roche limit, a hot Jupiter will begin losing mass to the star, and its density will drop, which causes its Roche limit to move outward. Consequently, the torques in the accretion disk should drive the planet outward, which will follow the Roche limit very closely. At larger $P$ (and/or smaller $M_{\rm p}$), the influence of tides raised on the star will decline, which will reduce the mass transfer rate. 
+
+As the hot Jupiter loses its atmosphere, eventually its core (if it has one) begins to dominate its mass, and the density increases as mass is lost and the Roche limit can retreat inward. If the tidal torque is sufficiently strong at that point, the remaining planet can follow the Roche limit back in, and mass loss will continue until the planet encounters the stellar surface, at which point, accretion of the planet may produce very bright optical and X-ray transient signals \cite{2012MNRAS.425.2778M}. 
+
+If the initial orbital expansion drives the planet far enough out, the tidal torque may become small enough that mass loss rate tapers off, as shown in Equation \ref{eqn:RLO_mass_loss_rate}, which would presumably leave the planet with a gaseous envelope. Radiative cooling dominates the time evolution of $R_{\rm p}$ and gives $\partial \ln R_{\rm p}/\partial t < 0$, meaning that term only reduces the mass loss rate.
+
+However, RLO is not the only process that removes planetary mass -- short-period gas giants are also prone to photoevaporative mass loss, in which heating of a planet's upper atmosphere by X-ray and ultraviolet (XUV) drives a hydrodynamic outflow  \DIFdelbegin \DIFdel{\mbox{%DIFAUXCMD
+\cite{VidalMadjar2003Extended}}%DIFAUXCMD
+}\DIFdelend \DIFaddbegin \DIFadd{\mbox{%DIFAUXCMD
+\cite{VidalMadjar2003Extended,2014ApJ...783...54K}}%DIFAUXCMD
+}\DIFaddend . Several studies, including \cite{Lopez2013Role}, have shown that this evaporative mass loss can completely remove the atmosphere from a Neptune/sub-Neptune-like planet but has little effect on the total mass of a hot Jupiter. 
+
+\cite{Erkaev2007Roche} provided a useful parameterization for energy-limited evaporative mass loss $\dot{M}_{\rm p, evap}$ incorporating the effect of tides:
+\begin{equation}
+\dot{M}_{\rm p, evap} = -\frac{\epsilon \pi R_{\rm p}^3 F_{\rm XUV}}{G M_{\rm p} K_{\rm tide}},
+\label{eqn:evaporative_mass_loss}
+\end{equation}
+where $F_{\rm XUV}$ is the stellar XUV flux at the distance of the planet, which tends to fall off for Sun-like stars as the stars age \cite{Ribas2005Evolution}. $R_{\rm p}$ is the planetary radius, and $\epsilon$ is the fraction of incoming XUV energy powering atmospheric escape, typically 10\% \cite{Owen2012Planetary}. Since gas outflowing from a planet close to its host star only has to reach the Roche lobe to escape, the required escape energy is smaller than if the gas had to escape to infinity, and $K_{\rm tide}$ represents this reduction in the escape energy, ranging from zero (a planet filling its Roche lobe) up to unity (a planet very far from filling its Roche lobe). 
+
+Among other studies, \cite{2009ApJ...693...23M} employed a detailed radiative and hydrodynamic model to show that Equation \ref{eqn:evaporative_mass_loss} provides a reasonable approximation for the mass loss rate. However, that model (and Equation \ref{eqn:evaporative_mass_loss}) are predicated upon the assumption that the atmosphere at the XUV photosphere is still gravitationally bound to the planet. Instead, in the case that a planet fills its Roche lobe, the photosphere is not bound by definition, and the atmosphere structure adjusts as mass loss sets in. In fact, $K_{\rm tide}$ in Equation \ref{eqn:evaporative_mass_loss} decreases without limit as $R_{\rm p} \rightarrow R_{\rm Roche}$, and so the predicted $\dot{M}_{\rm p, evap}$ blows up. Thus, the nature of photoevaporative mass loss is not clear for a planet in RLO. 
+
+Indeed, RLO and evaporative mass loss are not two distinct processes occurring in isolation from one another; rather, they are endmembers along a spectrum of atmospheric escape. The former operates when a planet fills its Roche lobe, while the latter can operate even when the planet is far from filling the Roche lobe (e.g., for Pluto in our solar system -- \cite{Watson1981Dynamics}). However, as pointed out in \cite{Ritter1988Turning} and \cite{Li2010WASP12b}, since planetary (and stellar) atmospheres do not terminate at a hard boundary but gradually taper off into space, RLO can operate even if the base of a planet's atmosphere is a few atmospheric scale heights from the Roche lobe. The transition between RLO and evaporative mass loss probably plays an important in sculpting the atmospheres of the remnants of disrupted hot Jupiters and will be explored in future work. \cite{2015ApJ...813..101V} did include photoevaporation in their models using Equation \ref{eqn:evaporative_mass_loss}, but it is not clear how that study circumvented the singularity during RLO. In the absence of a photoevaporative mass loss model that clearly applies during RLO, we do not include evaporative mass loss in our calculations.
+
+Turning back to RLO and tidal interactions, all of this planetary evolution is taking place in the presence of an evolving star, and, as we show below, the rate of stellar evolution may exceed those of orbital evolution and mass transfer. In this case, we expect that, once disruption begins, the planet will continue losing mass until the star leaves the main sequence, at which point a Sun-like star will enter the post-main sequence and may accrete the planet during its bloated red giant phase \cite{2009ApJ...700..832C}.
+
+Thus, we expect four distinct outcomes for close-in planets involving tidal decay and disruption:
+ \begin{enumerate} 
+\item \underline{Little to No Tidal Decay}: Tidal decay occurs slowly enough that the close-in planet does not encounter its Roche limit during the main sequence lifetime of the host star. Very likely such planets are accreted during the post-main sequence, but observational evidence for this accretion among red giant stars, including unusually high spin rates and Li content, is currently ambiguous \cite{2012ApJ...757..109C}.
+
+\item \underline{Complete \DIFdelbegin \DIFdel{Disruption and }\DIFdelend Accretion \DIFaddbegin \DIFadd{of the Planet}\DIFaddend }: The planet does encounter its Roche limit and undergoes mass transfer, but mass loss and the subsequent reduction in planetary density do not move the Roche limit out very far, leaving the tidal torque and, consequently, the mass loss at relatively large values. Thus, the planet may quickly lose its gaseous envelope, and the remaining core will spiral into the star, all during the main sequence. As discussed above, the large rotation rates for \kepler\ stars not seen to host close-in planets \cite{2013ApJ...775L..11M} may provide evidence for this scenario.
+
+\item \underline{Incomplete Disruption \DIFdelbegin \DIFdel{and Delayed Accretion}\DIFdelend \DIFaddbegin \DIFadd{of the Planet's Atmosphere}\DIFaddend }: Mass transfer begins and moves the planet far enough out that it is not completely accreted by the star during the main-sequence. However, loss of the planet's atmosphere and contraction of its radius occur slowly\DIFdelbegin \DIFdel{enough that the Roche lobe does not retreat inward. Consequently, after the planet encounters the initial Roche limit, it remains there, }\DIFdelend \DIFaddbegin \DIFadd{, and the planet never stops }\DIFaddend shedding mass either through RLO or photoevaporation \DIFaddbegin \DIFadd{during the main sequence lifetime of the star}\DIFaddend . Planets evolving in this way should be found \DIFdelbegin \DIFdel{at }\DIFdelend \DIFaddbegin \DIFadd{near }\DIFaddend their current Roche limits, and the fact that such a population is not observed might argue this scenario occurs rarely or not at all.
+
+\item \underline{Complete Disruption \DIFdelbegin \DIFdel{and Delayed Accretion}\DIFdelend \DIFaddbegin \DIFadd{of the Atmosphere Alone}\DIFaddend }: This scenario is similar to the third scenario above and distinct from the first scenario in that accretion of the remnant planet does not occur during the main sequence. During mass transfer, the planet's density does turn over, stranding the remnant at a maximum Roche limit period during its evolution, $P_{\rm Roche, max}$. As we show in the next section, this maximum orbital period depends sensitively on the core mass, which means that the period of a planet \DIFdelbegin \DIFdel{, whether gas-rich or entirely solid, }\DIFdelend that is the remnant of a disrupted hot Jupiter\DIFaddbegin \DIFadd{, whether gas-rich or entirely solid, }\DIFaddend will be largely determined by the mass of its solid core. 
+
+ \end{enumerate} 
+
+It is not clear that gas giants always have solid cores, and recent work has suggested that gas giants may even begin with solid cores but lose them through dissolution of the core in the gaseous envelope \cite{2012ApJ...745...54W}. Any of the above scenarios could still apply to the case of a coreless gas giant, but, of course, complete removal of the atmosphere means removal of the planet altogether. The mass-radius relation of a coreless gas giant would likely produce different orbital evolution than discussed here, but we do not explore that case in what follows. 
+
+Which of these scenarios applies depends in fairly simple ways on the \DIFaddbegin \DIFadd{combination of a }\DIFaddend planet's initial mass and period, its core mass, \DIFdelbegin \DIFdel{and }\DIFdelend $Q_\star$, and the \DIFaddbegin \DIFadd{product $\delta \gamma$. The }\DIFaddend suite of simulations described in the next section illustrates examples of each.
+
+\section{RLO Results from MESA}
+\label{sec:RLO_Results_from_MESA}
+Figure \ref{fig:plot_mass_orbital_evolution_variable-Mp0-Mcore} (a) illustrates the evolution for planets with a range of initial envelope masses $M_{\rm env, 0} = \left[0.3, 1, 3\right]$ \DIFdelbegin \DIFdel{Jupiter masses }\DIFdelend ${\rm M_{Jup}}$ but all with the same core $M_{\rm core} = 10\ {\rm M_{Earth}}$. In (b), the planets all begin with the same $M_{\rm env, 0} = 1\ {\rm M_{Jup}}$ but with $M_{\rm core} = \left[1, 5, 10, 30\right]\ {\rm M_{Earth}}$. All host stars have $M_\star = 1\ {\rm M_{Sun}}$\DIFaddbegin \DIFadd{, a Sun-like initial rotation velocity (2 km/s), }\DIFaddend and $Q_\star = 10^5$. All systems begin with initial periods $P_0 = 3\ {\rm days}$ and evolve from 20 Myrs to 10 Gyrs after formation. We assume solar metallicity for the star and the planet's atmosphere. Irradiation from the star is deposited within the planet's atmosphere at a fixed column depth, 100 g/cm$^2$, as in \cite{2015ApJ...813..101V}. We use the ``implicit'' RLO mass loss scheme in MESA. The host star sheds angular momentum through a rotationally-enhanced wind, as described in \cite{2013ApJS..208....4P}, and we hold the stellar radius fixed throughout the evolution. A consequence of this latter assumption is that we may underestimate the tidal torque, especially as the star leaves the main sequence and expands. \DIFaddbegin \DIFadd{For Figure \ref{fig:plot_mass_orbital_evolution_variable-Mp0-Mcore}, we also assume completely conservative mass transfer, i.e. $\delta \gamma = 0$. }\DIFaddend Additional model details are given in our MESA ``inlists'' and results files, all available at http://www.astrojack.com/research.
+
+\begin{figure}
+\includegraphics[width=\textwidth]{plot_mass_orbital_evolution_variable-Mp0-Mcore}
+\caption{Mass (red lines) and orbital (blue lines) evolution for hot Jupiter systems with initial periods $P_{0} =$ 3 days and $Q_\star = 10^5$ amd a variety of initial envelope masses $M_{\rm env,\ 0}$ and core masses $M_{\rm core}$. The different linestyles indicate different planetary parameters. (a) Hot Jupiters with $M_{\rm env,\ 0} =$ 0.3, 1, and 3 ${\rm M_{Jup}}$ and $M_{\rm core}$ fixed at 10 ${\rm M_{Earth}}$. (b) Hot Jupiters with $M_{\rm env,\ 0} = 1\ {\rm M_{Jup}}$ and $M_{\rm core} = $ 1, 5, 10, and 30 ${\rm M_{Earth}}$. \DIFaddbeginFL \DIFaddFL{These calculations assume $\delta \gamma = 0$, i.e. the orbital angular momentum is completely conserved.}\DIFaddendFL }
+\label{fig:plot_mass_orbital_evolution_variable-Mp0-Mcore}
+\end{figure}
+
+Although the planets in (a) begin with a range of initial masses and encounter the Roche limit at different times, the evolutionary curves all converge at late times because \DIFdelbegin \DIFdel{$\dot{a}/a$ and $\dot{M_{\rm p}}/M_{\rm p}$ }\DIFdelend \DIFaddbegin \DIFadd{$\dot{a}$ and $\dot{M_{\rm p}}$ }\DIFaddend both depend on \DIFdelbegin \DIFdel{$\dot{J}$}\DIFdelend \DIFaddbegin \DIFadd{$\left( \partial J/\partial t \right)_{\rm tides}$}\DIFaddend , which scales with $M_{\rm p}$. Thus, the planets with larger $M_{\rm env, 0}$ experience more rapid mass loss and orbit evolution, which eventually slow down as $M_{\rm p}$ drops, allowing the planets with smaller initial masses to catch up. 
+
+Moreover, by late times ($t \gtrsim 5\ {\rm Gyrs}$), the planets have lost sufficient mass that they have evolved from hot Jupiters, with envelope mass fractions $f_{\rm env} = M_{\rm env}/M_{\rm p} \sim 1$, to super-Earths/sub-Neptunes, with $f_{\rm env} \le 0.5$. \cite{Lopez2014Understanding} showed that the radii of such planets are almost entirely determined by the value of $f_{\rm env}$. Mass transfer of a planet's gaseous envelope reduces $f_{\rm env}$, so, as the $f_{\rm env}$-values converge, the planets' densities and Roche limits converge. 
+
+Figure \ref{fig:plot_mass_orbital_evolution_variable-Mp0-Mcore} (b) drives home the key role played by $M_{\rm core}$ in determining the evolution. For the planets with $M_{\rm core} \le 10\ {\rm M_{Earth}}$, mass transfer reduces the planetary densities to small values, driving the Roche limit and the planets back out to $P = 3$ days before the simulations end. In panel (b), those planets with $M_{\rm core} \le 10\ {\rm M_{Earth}}$ do not shed their entire envelopes during the course of the simulation because the orbital expansion that accompanies the mass transfer significantly reduces \DIFdelbegin \DIFdel{$\dot{J}$}\DIFdelend \DIFaddbegin \DIFadd{$\left( \partial J/\partial t \right)_{\rm tides}$}\DIFaddend . 
+
+\begin{figure}
+\includegraphics[width=\textwidth]{plot_mass_orbit_evolution_grid_qs5}
+\caption{Tidal evolution and mass transfer of planets with (top to bottom) $M_{\rm env, 0} =$ 0.3, 0.5, 1, 3, and 5 ${\rm M_{Jup}}$ and (left to right) $M_{\rm core} =$ 1, 3, 5, 10, 30, and 50 ${\rm M_{Earth}}$. All host stars have masses $M_\star = 1\ {\rm M_{Sun}}$ and $Q_\star = 10^5$. The combination $M_{\rm env, 0} = 0.5\ {\rm M_{Jup}}$/$M_{\rm core} = 10\ {\rm M_{Earth}}$ is missing due to convergence issues.}
+\label{fig:plot_mass_orbit_evolution_grid_qs5}
+\end{figure}
+
+Figure \ref{fig:plot_mass_orbit_evolution_grid_qs5} demonstrates a wide range of evolution for a grid of $M_{\rm env, 0}$ and $M_{\rm core}$. (We encountered insoluable convergence problems for the combination $M_{\rm env, 0} = 0.5\ {\rm M_{Jup}}$/$M_{\rm core} = 10\ {\rm M_{Earth}}$.) As shown Figure \ref{fig:plot_mass_orbital_evolution_variable-Mp0-Mcore}, the key parameter determining the degree of orbital expansion is $M_{\rm core}$. For example, all planets with $M_{\rm core} = 10\ {\rm M_{Earth}}$ back out to $P = 1.4$ days (before tumbling into their host stars). This result agrees with those of \cite{2015ApJ...813..101V} for the same core mass. Planets with less massive cores continuing moving back out toward $P = 3$ days and do not shed their entire atmospheres during the 10-Gyr simulation. By contrast, planets with $M_{\rm core} \ge 30\ {\rm M_{Earth}}$ back out only a little or not at all with onset of mass transfer. 
+
+\begin{figure}
+\includegraphics[width=\textwidth]{plot_mass_orbital_evolution_variable-Mp0-Mcore_qs6}
+\caption{Similar to Figure \ref{fig:plot_mass_orbital_evolution_variable-Mp0-Mcore}, except that $Q_\star = 10^6$. The x-axis also spans a different range.}
+\label{fig:plot_mass_orbital_evolution_variable-Mp0-Mcore_qs6}
+\end{figure}
+
+Since it helps determine the rate of angular momentum transfer, $Q_\star$ also factors into the fate of the planet, and Figure \ref{fig:plot_mass_orbital_evolution_variable-Mp0-Mcore_qs6} shows evolution curves similar to those in Figure \ref{fig:plot_mass_orbital_evolution_variable-Mp0-Mcore} but for $Q_\star = 10^6$. In this case, none of the modeled planets in either panel (a) or (b) encounters their Roche limits until much later than in Figure \ref{fig:plot_mass_orbital_evolution_variable-Mp0-Mcore}, and so by the end of the simulation, the planets still retain substantial gaseous envelopes. The departure of the star from the main sequence increases its luminosity, which strongly heats the planets' remaining atmospheres, driving the planets' bulk densities to very small values and the Roche limits out. However, even in this case, the evolution for all planets with a given core mass converge. 
+
+The upshot of these simulations is that a planet's core mass can play a dominant role in setting the orbital evolution of a disrupting planet. As long as mass transfer occurs quickly enough that stellar evolution is not a factor, we expect that a planetary mass-radius relationship that incorporates the dependence on core mass should allow us to predict at least the period at which orbital expansion of a disrupting planet halts. If tidal decay ceased at that point, such a mass-radius relation would indicate exactly where we could find the remnant of a disrupted gaseous planet, given the remnant's mass (and density).
+
+Unfortunately, comparing Figures \ref{fig:plot_mass_orbital_evolution_variable-Mp0-Mcore} and \ref{fig:plot_mass_orbital_evolution_variable-Mp0-Mcore_qs6}, it seems that, for conservative mass transfer, transfer rates large enough to nearly completely remove an atmosphere require tidal decay rates \DIFdelbegin \DIFdel{($\dot{J}$) }\DIFdelend that produce rapid orbital decay of the remnant, destroying the evidence (the ``Complete Disruption and Accretion'' scenario above). 
+
+Whether such a scenario commonly occurs is unclear since the appropriate values for $Q_\star$ are unknown, and it is not clear the mass transfer is completely conservative\DIFdelbegin \DIFdel{, as assumed here}\DIFdelend . As discussed above, it also seems plausible that some form of photoevaporative atmospheric escape should contribute to the mass loss, although it is not obvious what form it should take. Altogether, these uncertainties mean that the timescales for mass loss and tidal decay are not clear. 
+
+\DIFdelbegin \DIFdel{If mass loss rapid enough to remove a hot Jupiter's atmosphere requires rapid orbital decay, then there is unlikely to remain an observable remnant. \mbox{%DIFAUXCMD
+\cite{2015ApJ...813..101V} }%DIFAUXCMD
+investigated the effects of stable but not entirely conservative mass transfer. In this case, not all of the accretion disk's angular momentum is returned to the planet, and so, in order to compensate, the mass transfer rate is significantly larger than in the completely conservative case in order to maintain stability of the transfer}\DIFdelend \DIFaddbegin \DIFadd{Allowing for some loss of orbital angular momentum does not qualitatively modify these results. Instead, such loss simply modifies the timescales for the evolution to take place. Figure \ref{fig:plot_mass_orbital_evolution_variable-Mp0-Mcore_qs5_del1-gam0p5} illustrates cases similar to Figure \ref{fig:plot_mass_orbital_evolution_variable-Mp0-Mcore} except that we take $\delta \gamma = 0.5$, i.e. half the orbital angular momentum carried by the escaping gas is lost, and $\eta^{-1}$ is larger in Equations \ref{eqn:RLO_mass_loss_rate} and \ref{eqn:a_evolution_rate}.
+}
+
+\begin{figure}
+\includegraphics[width=\textwidth]{plot_mass_orbital_evolution_variable-Mp0-Mcore_qs5_del1-gam0p5}
+\caption{\DIFaddFL{Mass (red lines) and orbital (blue lines) evolution for hot Jupiter systems with initial periods $P_{0} =$ 3 days and $Q_\star = 10^5$ amd a variety of initial envelope masses $M_{\rm env,\ 0}$ and core masses $M_{\rm core}$. The different linestyles indicate different planetary parameters. (a) Hot Jupiters with $M_{\rm env,\ 0} =$ 0.3, 1, and 3 ${\rm M_{Jup}}$ and $M_{\rm core}$ fixed at 10 ${\rm M_{Earth}}$. (b) Hot Jupiters with $M_{\rm env,\ 0} = 1\ {\rm M_{Jup}}$ and $M_{\rm core} = $ 1, 5, 10, and 30 ${\rm M_{Earth}}$. These calculations assume $\delta \gamma = 0.5$, i.e half the orbital angular momentum carried by the escaping gas is lost.}}
+\label{fig:plot_mass_orbital_evolution_variable-Mp0-Mcore_qs5_del1-gam0p5}
+\end{figure}
+
+\DIFadd{Figure \ref{fig:plot_mass_orbital_evolution_variable-Mp0-Mcore_qs5_del1-gam0p5} closely resembles Figure \ref{fig:plot_mass_orbital_evolution_variable-Mp0-Mcore}, except that the mass loss and orbital evolution proceed more quickly. For example, in panel (a), the planet with $M_{\rm env, 0} = 1\ M_{\rm Jup}$ reaches $P_{\rm Roche, max} = 1.5$ days by $t = 4$ Gyrs, instead of 9 Gyrs as in Figure \ref{fig:plot_mass_orbital_evolution_variable-Mp0-Mcore} (a). The fact that the orbital expansion shown in Figure \ref{fig:plot_mass_orbital_evolution_variable-Mp0-Mcore} does not reverse until nearly the end of the star's main sequence lifetime (when the star is brighter) also means that the planets' atmospheres are hotter and therefore more distended than those shown in Figure \ref{fig:plot_mass_orbital_evolution_variable-Mp0-Mcore_qs5_del1-gam0p5} (a)}\DIFaddend . Consequently, \DIFdelbegin \DIFdel{a given angular momentum transfer rate can drive a largermass transfer rate than we find here and potentially leave behind a remnant to be observed. Contribution of evaporative mass loss could also help remove the atmosphere. In fact, \mbox{%DIFAUXCMD
+\cite{2015ApJ...813..101V} }%DIFAUXCMD
+found that, after shedding their atmosphere, the remnants of some planets remained at the maximum Roche limit period that occurred during their evolution, }\DIFdelend $P_{\rm Roche, max}$ \DIFdelbegin \DIFdel{, at least when tidal decay rates were slow enough}\DIFdelend \DIFaddbegin \DIFadd{is slightly larger}\DIFaddend . \DIFaddbegin \DIFadd{Similar results obtain for the $Q_{\rm star} = 10^6$ and $\delta \gamma = 0.5$ cases. These results suggest that, as long as the mass transfer is stable, non-conservation of angular momentum does not qualitatively modify the simple scenario outlined above. 
+}\DIFaddend 
+
+Thus, \DIFdelbegin \DIFdel{we suggest that, }\DIFdelend assuming there is some remnant left behind \DIFdelbegin \DIFdel{at all}\DIFdelend \DIFaddbegin \DIFadd{after removal of a hot Jupiter's atmosphere}\DIFaddend , the mass loss and angular momentum transfer timescales are of secondary importance in determining the properties and orbit of the remnant. Instead, we suggest that the mass-radius relationship dominates, and we expect to find remnants stranded near \DIFaddbegin \DIFadd{or interior to }\DIFaddend $P_{\rm Roche, max}$, the point at which the tidal interaction becomes weakest. 
+
+A key feature of this hypthothesis is that, in order to denude a gas planet's solid core, loss of the atmosphere must continue, even as the Roche limit retreats inward of the planet's orbit. Since, in principle, this retreat of the Roche limit means the planet is no longer in Roche-lobe contact, RLO must taper off. However, at that point, we suggest photoevaporation can take over and remove much of the remaining atmosphere to produce a planet that not currently observed in or near RLO. Otherwise, a population of \DIFdelbegin \DIFdel{nearly overflowing planets }\DIFdelend \DIFaddbegin \DIFadd{planets with $P = P_{\rm Roche}$ }\DIFaddend should be observed, and it is not -- Figure \ref{fig:P-PRoche}.
+
+Of course, our simulations here indicate more complicated evolution can occur, but in the interest of providing a clear, testable prediction, we next consider how the Roche limit evolves as the planet loses its gaseous envelope and whether there is evidence for a population of low-mass, short-period planets near periods where we \DIFdelbegin \DIFdel{'d }\DIFdelend \DIFaddbegin \DIFadd{would }\DIFaddend expect remnants.
+
+\section{Evolution of the Roche Limit for a Disrupting Gaseous Planet}
+\label{sec:Evolution_of_the_Roche_Limit_for_a_Disrupting_Gaseous_Planet}
+Applying a full planetary evolution model, \cite{Lopez2014Understanding} studied the dependence of the radii of sub-Neptunes/super-Earths (with $M_{\rm p} \le 20\ {\rm M_{Earth}}$) on the planets' envelope and core masses, stellar insolation, and age. They fit the following series of power-laws to provide an analytic mass-radius relation:
+\begin{equation}
+R_{\rm p} \approx 2.06\ {\rm R_{Earth}}\ \left( \dfrac{M_{\rm p}}{\rm M_{Earth}} \right)^{-0.21} \left( \dfrac{f_{\rm env}}{5\%} \right)^{0.59} \left( \dfrac{F_{\rm p}}{\rm F_{Earth}} \right)^{0.044} \left( \dfrac{\rm age}{\rm 5\ Gyrs} \right)^{-0.18} + R_{\rm core}\  ,
+\label{eqn:LopezFortney2014_subNeptune_relation}
+\end{equation}
+where $F_{\rm p}$ is the stellar insolation received by the planet. Equation \ref{eqn:LopezFortney2014_subNeptune_relation} involves a number of approximations, including neglecting the contribution to $R_{\rm p}$ of a radiative outer atmosphere, which is usually small ($0.1\ {\rm R_{Earth}}$). The last term represents the radius of the solid core, which is insensitive to the exact proportion of iron and rock and is given \DIFdelbegin \DIFdel{by $R_{\rm core} \approx \left( \dfrac{M_{\rm core}}{\rm M_{Earth}} \right)^{0.25}\ {\rm R_{Earth}}$. 
+}\DIFdelend \DIFaddbegin \DIFadd{in \mbox{%DIFAUXCMD
+\cite{Lopez2014Understanding}}%DIFAUXCMD
+:
+}\begin{equation}
+R_{\rm core} \approx \left( \dfrac{M_{\rm core}}{\rm M_{Earth}} \right)^{0.25}\ {\rm R_{Earth}}. 
+\label{eqn:LopezFortney2014_rockyplanet_relation}
+\end{equation}
+\DIFaddend 
+
+Figure \ref{fig:compare_mass-radius_relations} compares the mass-radius relationship given by Equation \ref{eqn:LopezFortney2014_subNeptune_relation} to that given in Figure 7 of \cite{2015ApJ...813..101V} based on the RLO calculations for that paper. (It is important to note that the power-law fits in \cite{Lopez2014Understanding} were made only for $M_{\rm p} \le 20\ {\rm M_{Earth}}$, and the gray region in the figure shows where we have extrapolated beyond that point.) 
+
+\begin{figure}
+\includegraphics[width=\textwidth]{compare_mass-radius_relations}
+\caption{Mass-radius relations from \cite{2015ApJ...813..101V}, labeled ``V+15'', and from \cite{Lopez2014Understanding} and Equation \ref{eqn:LopezFortney2014_subNeptune_relation}, labeled ``LF14''. For the LF14 relations, we have assumed planetary ages of 5 Gyrs (dotted lines) and 30 Myrs (solid lines). The color of a line corresponds to an assumed $M_{\rm core}$ (as labeled), and the gray region shows where we have extrapolated outside the range of $M_{\rm p}$ considered in \cite{Lopez2014Understanding}.}
+\label{fig:compare_mass-radius_relations}
+\end{figure}
+
+As indicated in \cite{2014ApJ...793L...3V}, the age of a planet becomes less important in determining the radius as the \DIFdelbegin \DIFdel{planets }\DIFdelend \DIFaddbegin \DIFadd{planet }\DIFaddend ages, and that study considers a fiducial age of 5 Gyrs, at which point the radius is insensitive to the initial entropy assumed for the planet's interior. Interestingly, the radii for this fiducial age lie considerably below the radii given in \cite{2015ApJ...813..101V} for planets in RLO. 
+
+In fact, the reason for this disagreement is addressed in \cite{2014ApJ...793L...3V}: all other things being equal, larger planets cool more slowly, owing to their larger volume to surface area ratio, and it seems that planets arriving at a given mass via RLO retain higher internal entropies than planets born with that mass. Indeed, the entropies estimated by MESA for the convective interiors of our modeled planets from the previous section at a given $M_{\rm p}$ and age do exceed the corresponding entropies shown in Figure 4 of \cite{2014ApJ...793L...3V}. 
+
+By using a fiducial age of 30 Myrs in Equation \ref{eqn:LopezFortney2014_subNeptune_relation} instead (solid lines in Figure \ref{fig:compare_mass-radius_relations}), we can bring the radius estimates into reasonable agreement with those of \cite{2015ApJ...813..101V}, at least at the lowest masses, which is the most important portion of the curve for determining $P_{\rm Roche, max}$. (Other similar, fiducial ages give worse qualitative agreement between the curves.)
+
+We can re-write Equation \ref{eqn:LopezFortney2014_subNeptune_relation} using this new fiducial age of 30 Myrs. Since $f_{\rm env}$ drops while $M_{\rm core}$ remains constant during RLO, with $M_{\rm p} = M_{\rm core}/\left(1 - f_{\rm env}\right)$, it is worth re-casting the equation in terms of those variables:
+\begin{equation}
+R_{\rm p} \approx 5.17\ {\rm R_{Earth}} \left( \dfrac{M_{\rm core}}{M_{\rm Earth}} \right)^{-0.21} \left( \dfrac{f_{\rm env}}{0.05} \right)^{0.59} \left( 1 - f_{\rm env} \right)^{0.21} + \left( \dfrac{M_{\rm core}}{M_{\rm Earth}} \right)^{0.25}\ {\rm R_{Earth}}.
+\label{eqn:recast_LopezFortney2014_subNeptune_relation}
+\end{equation}
+Here we have assumed $F_{\rm p} = F_{\rm Earth}$ since the insolation has only a small effect on the radius.
+
+With this mass-radius relation in hand, we can solve for planetary density and therefrom for $P_{\rm Roche}$ as functions of $M_{\rm core}$ and $f_{\rm env}$. As in \cite{Lopez2014Understanding}, we can estimate $f_{\rm env}$ by assuming $M_{\rm p} \approx M_{\rm core}$ and, for planets with small $f_{\rm env}$, we can compare their current orbital periods to the $P_{\rm Roche, max}$ expected for a given $M_{\rm core}$-value. Figure \ref{fig:LopezFortney2014_density-PRoche_contours} shows contours of $P_{\rm Roche}$ as a function of $M_{\rm core}$ and $f_{\rm env}$ and the $M_{\rm core}$-values for three example, short-period planets, GJ 1214 b \cite{2009Natur.462..891C}, Kepler-21 b \cite{2012ApJ...746..123H}, and Kepler-78 b \cite{2013ApJ...774...54S}. 
+
+\begin{figure}
+\includegraphics[width=\textwidth]{LopezFortney2014_density-PRoche_contours}
+\caption{The copper-to-black, solid contours show density and $P_{\rm Roche}$ based on the mass-radius relationship Equation \ref{eqn:LopezFortney2014_subNeptune_relation} from \cite{Lopez2014Understanding}. The leftmost number labeling each contour is the density in g/cm$^3$ and the rightmost the corresponding $P_{\rm Roche}$ in hours. The vertical blue, red, and green dashed lines show the core masses estimated using Equation \ref{eqn:recast_LopezFortney2014_subNeptune_relation} for GJ 1214 b, Kepler-21 b, and Kepler-78 b, respectively. The contour corresponding in color and linestyle shows the $P_{\rm Roche} = P$ curve for that planet's observed orbital period $P$ but not the planet's density.}
+\label{fig:LopezFortney2014_density-PRoche_contours}
+\end{figure}
+
+Using Figure \ref{fig:LopezFortney2014_density-PRoche_contours}, we can study the orbital evolution during RLO of a gaseous planet and predict quantitatively in what orbit the orbital expansion should slow. For example, consider a gas giant planet ($f_{\rm env} \approx 1$) with $M_{\rm core} = 30\ {\rm M_{Earth}} \approx 10^{1.5}\ {\rm M_{Earth}}$. With a density like Jupiter's, 1 g/cm$^3$, such a planet would encounter its Roche limit at $P_{\rm Roche} =$ 9 hours. Overflow would begin, reducing $f_{\rm env}$ and driving the planet downward along constant $M_{\rm core}$ in the figure. The planet should eventually encounter the \DIFdelbegin \DIFdel{$\rho_{\rm p}/P_{\rm Roche} = 0.25\ {\rm g/cm^3}/19\ {\rm hrs}$ contour }\DIFdelend \DIFaddbegin \DIFadd{contour with $\rho_{\rm p} = 0.25\ {\rm g/cm^3}$ and $P_{\rm Roche} = 19\ {\rm hrs}$ contour}\DIFaddend . As $f_{\rm env} \rightarrow 0.5 \approx 10^{-0.3}$, that \DIFdelbegin \DIFdel{$P_{\rm Roche}/\rho_{\rm p}$ }\DIFdelend \DIFaddbegin \DIFadd{$\rho_{\rm p}$--$P_{\rm Roche}$ }\DIFaddend contour turns over, $\rho_{\rm p}$ increases while $P_{\rm Roche}$ decreases, and presumably the planet would either move back in toward to the star or would be stranded near this $P_{\rm Roche, max} = 19\ {\rm hrs}$\DIFdelbegin \DIFdel{, eventually to shed the rest of its envelope via photoevaporation. Thus, in }\DIFdelend \DIFaddbegin \DIFadd{. The rest of the atmosphere may be shed by photoevaporation, depending on the rate of evaporative mass loss. In any case, for }\DIFaddend this simple scenario, a planet with a known $M_{\rm core}$ \DIFaddbegin \DIFadd{(and which may or may not retain an atmosphere) }\DIFaddend should have a period near \DIFdelbegin \DIFdel{the inflection }\DIFdelend \DIFaddbegin \DIFadd{or interior to the extremum }\DIFaddend point in contour that passes nearest its $M_{\rm core}$-value. Based on the contours in Figure \ref{fig:LopezFortney2014_density-PRoche_contours}, Figure \ref{fig:PRoche-max_vs_Mcore} shows $P_{\rm Roche, max}$ as a function of $M_{\rm core}$. 
+
+\begin{figure}
+\includegraphics[width=\textwidth]{PRoche-max_vs_Mcore}
+\caption{The maximum value for the Roche limit of disrupting gas giant, $P_{\rm Roche, max}$, vs. its core mass, $M_{\rm core}$.}
+\label{fig:PRoche-max_vs_Mcore}
+\end{figure}
+
+To make that comparison for known planets, consider first Kepler-78 b, represented by the green, dotted lines in Figure \ref{fig:LopezFortney2014_density-PRoche_contours}. With $P = 8.5$ hrs, Kepler-78 b has a mass (1.69 ${\rm M_{Earth}}$) and radius (1.20 ${\rm R_{Earth}}$) consistent with a bare, rocky planet, i.e. $M_{\rm core} =$ 1.69 ${\rm M_{Earth}}$. The \DIFdelbegin \DIFdel{inflection }\DIFdelend \DIFaddbegin \DIFadd{extremum }\DIFaddend point in the green, dotted contour in Figure \ref{fig:LopezFortney2014_density-PRoche_contours} suggests such a small orbital period would require a gas giant with $M_{\rm core} > 100\ {\rm M_{Earth}}$, much larger than Kepler-78 b's current mass. Conversely, if it were the remnant of a disrupted gaseous planet, we would expect Kepler-78 b to have a period nearer to 150 hrs, much larger than observed. In principle, tidal decay of the core could reduce the orbital period, but moving from 150 to 8.5 hrs even with $Q_\star = 10^5$ would require 1.3 trillion years, and $Q_\star$-values small enough to do the job in a short enough time would give the planet a pending lifetime short enough to be statistically unlikely. This result is consistent with \cite{2015ApJ...813..101V}, which suggested that Kepler-78 b, like many other ultra-short period planets \cite{2014ApJ...787...47S}, \DIFdelbegin \DIFdel{are }\DIFdelend \DIFaddbegin \DIFadd{is }\DIFaddend too close-in to be \DIFdelbegin \DIFdel{remnants of disrupted gas giants}\DIFdelend \DIFaddbegin \DIFadd{the remnant of a disrupted gas giant}\DIFaddend .
+
+Another illustrative case is GJ 1214 b, with $P =$ 37.92 hrs. Based on its mass (6.46 ${\rm M_{Earth}}$) and radius (2.67 ${\rm R_{Earth}}$), \cite{Lopez2014Understanding} estimate $f_{\rm env} =$ 3.83\%. (Considering a different fiducial age does not significantly modify this value.) The \DIFdelbegin \DIFdel{inflection }\DIFdelend \DIFaddbegin \DIFadd{extremum }\DIFaddend point for the $P_{\rm Roche} =$ 37.92 hrs contour lies near $M_{\rm core} =$ 10 ${\rm M_{Earth}}$, slightly larger than GJ 1214 b's core mass. Said another way, the remnant of a gas giant with a core having GJ 1214 b's core mass would be expected near \DIFaddbegin \DIFadd{or interior to }\DIFaddend $P =$ 55.6 hrs\DIFdelbegin \DIFdel{, farther out than GJ 1214 b is observed. Again, though, tidal }\DIFdelend \DIFaddbegin \DIFadd{. Tidal }\DIFaddend decay of the remnant's orbit could \DIFdelbegin \DIFdel{explain the discrepancy}\DIFdelend \DIFaddbegin \DIFadd{move such a remnant inward to GJ 1214 b's current orbit}\DIFaddend , but with its current mass and $Q_\star = 10^5$, moving GJ 1214 b from 55.6 to 39.92 hours would require more than 60 Gyrs. A smaller $Q_\star = 10^4$ would bring the decay timescale down to a value closer to the system's current age (6 Gyrs) and would leave almost 1.5 Gyrs before the planet decayed down to its current Roche limit at $P_{\rm Roche} = 7$ hrs. As an M-dwarf, GJ 1214 is expected to have a deep convective zone, but it is not clear that such small tidal dissipation parameter obtains even in the case of an M-dwarf.
+
+Finally, consider Kepler-21 b, with $P =$ 66 hrs. Based on its mass (3.85 ${\rm M_{Earth}}$) and radius (1.64 ${\rm R_{Earth}}$), we estimate its $f_{\rm env} \le$ 0.04\%. Turning to Figures \ref{fig:LopezFortney2014_density-PRoche_contours} and \ref{fig:PRoche-max_vs_Mcore}, we see that core mass puts the planet not too far from \DIFdelbegin \DIFdel{its expected period}\DIFdelend \DIFaddbegin \DIFadd{the corresponding $P_{\rm Roche, max}$}\DIFaddend , 82 hrs. In fact, tidal decay with the planet's current mass and $Q_\star = 10^5$ can \DIFaddbegin \DIFadd{move }\DIFaddend the planet from 82 to 66 hrs in about 2 Gyrs, leaving 1.4 Gyrs before the planet encounters its current Roche limit at 4.4 hrs. The system's age is not known, but these timescales are qualitatively consistent with our intuitive expectations that we should not have caught the system in a short-lived phase of its life.
+
+Figure \ref{fig:P_vs_PRoche-max} compares the observed orbital periods for close-in planets to our estimates of their $P_{\rm Roche, max}$-values, shown as blue circles, and we've also considered the estimates of $f_{\rm env}$ and $M_{\rm core}$ from \cite{Lopez2014Understanding}. Here we've only considered those planets with estimated $f_{\rm env} \le 0.1$, but we have included planets \DIFaddbegin \DIFadd{(indicated with black circles) }\DIFaddend that are observed to have sibling planets\DIFdelbegin \DIFdel{, indicated with black circles}\DIFdelend . It's not clear that the multiplanet system would remain dynamically stable with one of the planets undergoing RLO, but considering that issue is outside the scope of this paper.
+
+\begin{figure}
+\includegraphics[width=\textwidth]{P_vs_PRoche-max}
+\caption{Based on data harvested from exoplanets.org on 2016 Feb 11, observed orbital periods $P$ and estimated $P_{\rm Roche, max}$-values for many short-period planets with estimated envelope mass fractions $f_{\rm env} \le 0.1$. The blue dots represent estimates from this study, while red dots those from \cite{Lopez2014Understanding}. Black circles show \DIFaddbeginFL \DIFaddFL{which planets are }\DIFaddendFL members of multiplanet systems.}
+\label{fig:P_vs_PRoche-max}
+\end{figure}
+
+Figure \ref{fig:P_vs_PRoche-max} does not show a clear clustering of planets along the $P = P_{\rm Roche, max}$ line, but several objects lie nearby, qualitatively consistent with the RLO picture outlined here. Interestingly, the planet lying nearest the line \DIFdelbegin \DIFdel{, the most promising candidate remnant, }\DIFdelend is Kepler-93 b, with the most precisely measured exoplanet radius \cite{2014ApJ...790...12B}. The majority of objects depicted lie above the line, however\DIFdelbegin \DIFdel{, and for those planets to be remnants of disrupted gas giants, our model would have to significantly underestimate the radii, i. e. overestimate the planetary densities. }\DIFdelend \DIFaddbegin \DIFadd{. }\DIFaddend Some of the objects also lie well below the line, including Kepler-78 b (the red dot near $P_{\rm Roche, max} =$ 6 days) and might require implausibly small $Q_\star$-values to be consistent with the RLO models presented here. A more detailed analysis, tailored to individual systems and incorporating observational biases would clarify the origins of these objects but is beyond the scope of this study. (An interactive version of Figure \ref{fig:P_vs_PRoche-max} is available at http://www.astrojack.com/research.)
+
+\section{Discussion and Conclusions}
+\label{sec:Discussion_and_Conclusions}
+By investigating the evolution of bulk density for a disrupting gas giant, we have constructed a simple model of orbital evolution during Roche lobe overflow (RLO) and sought remnant cores amongst the observed population of short-period planets. We have confirmed the results of \cite{2015ApJ...813..101V} that the degree of orbital expansion accompanying RLO is directly related to the mass of remaining planet. We have also expanded those results to argue that the core mass of the disrupting gas giant dominates the maximum orbital period reached during RLO, with the initial planetary mass, orbit, and the rates of orbital evolution and mass transfer playing important but secondary roles. This approach has the benefit of providing specific observational predictions.
+
+As useful as our analysis here may be, it involves several important approximations and assumptions. \DIFdelbegin \DIFdel{For instance}\DIFdelend \DIFaddbegin \DIFadd{Foremost}\DIFaddend , we have assumed \DIFdelbegin \DIFdel{completely conservative mass transfer , meaning orbital angular momentum is conserved during RLO. This assumption allows us to circumvent the unknown tidal dissipation parameters $Q_\star$ and the efficiency for angular momentum transfer between the disrupting planet and the accretion disk but means we have neglected the effect of the related timescales, which can important }\DIFdelend \DIFaddbegin \DIFadd{the mass transfer is stable. However, unstable mass transfer may be quite important for some systems. \mbox{%DIFAUXCMD
+\cite{2012MNRAS.425.2778M} }%DIFAUXCMD
+pointed out that, for planets with densities in a specific range, the Roche limit may lie very near but still outside the host star. In these cases, significant angular momentum may be lost from the orbit since the innermost edge of the accretion disk orbits very near the host star's surface. If it applies, such a scenario may account for the emerging population of very short period planets}\DIFaddend . 
+\DIFdelbegin \DIFdel{Fortunately, the maximum orbital period reached by a disrupting gas giant should not depend on the mass transfer rate itself, but only on the planet's mass-radius relation (assuming the transfer is stable), as evidenced by agreement between our results in Section \ref{sec:RLO_Results_from_MESA} and those in \mbox{%DIFAUXCMD
+\cite{2015ApJ...813..101V}}%DIFAUXCMD
+, which used a different tidal interaction formulation. }%DIFDELCMD < 
+
+%DIFDELCMD < %%%
+\DIFdel{In all our modeling here, we have assumed a solar metallicity for the atmospheres. Enhanced metallicity can reduce the radius for a given mass, but the resulting enhanced atmospheric opacity can also slow the internal cooling of the planet, resulting in a slightly inflated radius at a given age \mbox{%DIFAUXCMD
+\cite{2007ApJ...661..502B}}%DIFAUXCMD
+. We leave an exploration of metallicity's role on RLO for future work.
+}\DIFdelend 
+
+We have also not explicitly included the photoevaporative mass loss, which may be a key process in reducing the Neptune/sub-Neptune remnant of a nearly disrupted hot Jupiter to a completely denuded solid core. As discussed in Section \ref{sec:dynamics_of_planetary_rochelobe_overflow}, models for this process have been developed previously, but those models may only be applicable when a planet is not in Roche-lobe contact. However, the details of this transition probably does not significantly modify the orbital evolution considered here.
+
+\DIFaddbegin \DIFadd{We have also assumed a solar metallicity for the planetary atmospheres. Enhanced metallicity can reduce the radius for a given mass, but the resulting enhanced atmospheric opacity can also slow the internal cooling of the planet, resulting in a slightly inflated radius at a given age \mbox{%DIFAUXCMD
+\cite{2007ApJ...661..502B}}%DIFAUXCMD
+. We leave an exploration of metallicity's role on RLO for future work.
+}
+
+\DIFaddend Our modeling suggests four distinct scenarios for disrupting gas giants (Section \ref{sec:dynamics_of_planetary_rochelobe_overflow}): (1) Little to No Tidal Decay, for which the currently observed properties of short-period planets essentially reflects their initial conditions; (2) Complete \DIFdelbegin \DIFdel{Disruption and Accretion }\DIFdelend \DIFaddbegin \DIFadd{Accretion of the Planet}\DIFaddend , for which tidal disruption and decay would very quickly remove short-period planets, masking much of the observational evidence for the process; (3) \DIFdelbegin \DIFdel{Incompletely Disruption and Delayed Accretion}\DIFdelend \DIFaddbegin \DIFadd{Incomplete Disruption of the Planet's Atmosphere}\DIFaddend , in which case tidal disruption proceeds relatively slowly and would leave behind gas-rich planets at their current Roche limits, a population not obvious among the observed planets (Figure \ref{fig:P-PRoche}); and (4) Complete Disruption \DIFdelbegin \DIFdel{and Delayed Accretion}\DIFdelend \DIFaddbegin \DIFadd{of the Atmosphere Alone}\DIFaddend , for which mass transfer removes the atmosphere of a hot Jupiter but leaves behind a denuded or \DIFdelbegin \DIFdel{slightly }\DIFdelend gas-rich remnant near \DIFaddbegin \DIFadd{or interior to }\DIFaddend the maximum Roche limit attained during RLO, a population which is hinted at among the observed population (Figure \ref{fig:P_vs_PRoche-max}). 
+
+Additional work is clearly needed to investigate the likely complicated transition between the endmember cases of RLO and photoevaporation to understand its influence on Neptunes/sub-Neptunes. RLO models tailored to individual observed systems may also prove fruitful and lend additional credence to the evolution discussed here. A better understanding of how short-period planets become short-period in the first place would also significantly help clarify the extent to which subsequent RLO played a role since distinguishing remnants of RLO from those that superficially resemble remnants is difficult. Our work here also provides additional impetus to better understand the mass-radius relationship for the puzzling population of sub-Neptunes/super-Earths that seem so common in the Milky Way \cite{2014PNAS..11112655M}. 
+
+If additional work can show that many small, short-period planets are the remnants of disrupted gas giants, they can provide unprecedented insight in the natures of gas giant cores. For instance, the threshold core mass required to initiate gravitational accretion of a gas giant is probably $\gtrsim 10\ {\rm M_{Earth}}$ \cite{2014A&A...572A.107L} but remains poorly constrained by observation. Even among gas giants in our own solar system, estimates of the core masses for Jupiter and Saturn span a wide range -- Jupiter may not even have a solid core \cite{2010SSRv..152..423F} -- but the upcoming Juno mission will clarify the situation, at least for our solar system. Whether these constraints will directly bear on other planetary systems is unclear since these other systems likely had different formation conditions. 
+
+One issue not explored here is the influence of stellar properties. Since the tidal interaction strength depends very sensitively on stellar radius (we only considered solar mass stars here), we would expect RLO of hot Jupiters to be more common for larger stars, all other things being equal. Of course, all other things are not equal, and the occurrence rate and initial conditions for hot Jupiters for different stellar types should both play key roles. The occurrence rate of RLO remnant planets should depend on the occurrence rates of hot Jupiters, but the dependence of that latter rate on stellar properties is poorly known \cite{2015ApJ...799..229W}. By contrast, \cite{2013ApJ...767...95D} reported that the occurrence rate for Earth-size (0.5-1.4 ${\rm R_{Earth}}$) planets with orbital periods shorter than 50 days is constant among cool ($T <$ 4,000 K) stars, while the same occurrence rate for 1.4-4 ${\rm R_{Earth}}$ planets declines at cooler temperatures. Exploring all these issues in the context of the RLO hypothesis may prove fruitful.
+
+\begin{acknowledgements}
+We thank the editors for the invitation to contribute to this issue and their patience as we prepared this study\DIFaddbegin \DIFadd{. We also thank an anonymous referee for thoughtful input}\DIFaddend .
+\end{acknowledgements}
+
+% BibTeX users please use one of
+%\bibliographystyle{spbasic}      % basic style, author-year citations
+\bibliographystyle{spmpsci}      % mathematics and physical sciences
+%\bibliographystyle{spphys}       % APS-like style for physics
+\bibliography{CeMDA_tidal-decay}   % name your BibTeX data base
+
+% Non-BibTeX users please use
+%\begin{thebibliography}{}
+%
+% and use \bibitem to create references. Consult the Instructions
+% for authors for reference list style.
+%
+%\bibitem{RefJ}
+% Format for Journal Reference
+%Author, Article title, Journal, Volume, page numbers (year)
+% Format for books
+%\bibitem{RefB}
+%Author, Book title, page numbers. Publisher, place (year)
+% etc
+%\end{thebibliography}
+
+\end{document}
+% end of file template.tex
