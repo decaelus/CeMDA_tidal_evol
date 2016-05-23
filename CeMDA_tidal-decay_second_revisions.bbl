@@ -1,0 +1,489 @@
+\begin{thebibliography}{10}
+\providecommand{\url}[1]{{#1}}
+\providecommand{\urlprefix}{URL }
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{DOI~\discretionary{}{}{}#1}\else
+  \providecommand{\doi}{DOI~\discretionary{}{}{}\begingroup
+  \urlstyle{rm}\Url}\fi
+
+\bibitem{2016arXiv160306488A}
+{Adams}, E.R., {Jackson}, B., {Endl}, M.: {Ultra Short Period Planets in K2:
+  SuPerPiG Results for Campaigns 0-5}.
+\newblock ArXiv e-prints  (2016)
+
+\bibitem{2015MNRAS.446.3676A}
+Adams, F.C., Bloch, A.M.: On the stability of extrasolar planetary systems and
+  other closely orbiting pairs.
+\newblock \\mnras \textbf{446}, 3676--3686 (2015).
+\newblock \doi{10.1093/mnras/stu2397}.
+\newblock \urlprefix\url{http://dx.doi.org/10.1093/mnras/stu2397}
+
+\bibitem{Arras2006Thermal}
+{Arras}, P., {Bildsten}, L.: Thermal structure and radius evolution of
+  irradiated gas giant planets.
+\newblock Astrophys. J. \textbf{650}, 394--407 (2006).
+\newblock \doi{10.1086/506011}.
+\newblock \urlprefix\url{http://dx.doi.org/10.1086/506011}
+
+\bibitem{2014ApJ...790...12B}
+{Ballard}, S., {Chaplin}, W.J., {Charbonneau}, D., {D{\'{e}}sert}, J.M.,
+  {Fressin}, F., {Zeng}, L., {Werner}, M.W., {Davies}, G.R., {Silva Aguirre},
+  V., {Basu}, S., {Christensen-Dalsgaard}, J., {Metcalfe}, T.S., {Stello}, D.,
+  {Bedding}, T.R., {Campante}, T.L., {Handberg}, R., {Karoff}, C., {Elsworth},
+  Y., {Gilliland}, R.L., {Hekker}, S., {Huber}, D., {Kawaler}, S.D.,
+  {Kjeldsen}, H., {Lund}, M.N., {Lundkvist}, M.: {Kepler-93b: A Terrestrial
+  World Measured to within 120 km, and a Test Case for a New Spitzer Observing
+  Mode}.
+\newblock \\apj \textbf{790}, 12 (2014).
+\newblock \doi{10.1088/0004-637X/790/1/12}.
+\newblock \urlprefix\url{http://dx.doi.org/10.1088/0004-637X/790/1/12}
+
+\bibitem{2014ApJ...788....1B}
+{B{\'{e}}ky}, B., {Holman}, M.J., {Kipping}, D.M., {Noyes}, R.W.: {Stellar
+  Rotation-Planetary Orbit Period Commensurability in the HAT-P-11 System}.
+\newblock \\apj \textbf{788}, 1 (2014).
+\newblock \doi{10.1088/0004-637X/788/1/1}.
+\newblock \urlprefix\url{http://dx.doi.org/10.1088/0004-637X/788/1/1}
+
+\bibitem{2013MNRAS.434..806B}
+{Bell}, C.P.M., {Naylor}, T., {Mayne}, N.J., {Jeffries}, R.D., {Littlefair},
+  S.P.: {Pre-main-sequence isochrones - II. Revising star and planet formation
+  time-scales}.
+\newblock \\mnras \textbf{434}, 806--831 (2013).
+\newblock \doi{10.1093/mnras/stt1075}.
+\newblock \urlprefix\url{http://dx.doi.org/10.1093/mnras/stt1075}
+
+\bibitem{2007ApJ...661..502B}
+{Burrows}, A., {Hubeny}, I., {Budaj}, J., {Hubbard}, W.B.: {Possible Solutions
+  to the Radius Anomalies of Transiting Giant Planets}.
+\newblock \\apj \textbf{661}, 502--514 (2007).
+\newblock \doi{10.1086/514326}.
+\newblock \urlprefix\url{http://dx.doi.org/10.1086/514326}
+
+\bibitem{2012ApJ...757..109C}
+{Carlberg}, J.K., {Cunha}, K., {Smith}, V.V., {Majewski}, S.R.: {Observable
+  Signatures of Planet Accretion in Red Giant Stars. I. Rapid Rotation and
+  Light Element Replenishment}.
+\newblock \\apj \textbf{757}, 109 (2012).
+\newblock \doi{10.1088/0004-637X/757/2/109}.
+\newblock \urlprefix\url{http://dx.doi.org/10.1088/0004-637X/757/2/109}
+
+\bibitem{2009ApJ...700..832C}
+{Carlberg}, J.K., {Majewski}, S.R., {Arras}, P.: {The Role of Planet Accretion
+  in Creating the Next Generation of Red Giant Rapid Rotators}.
+\newblock \\apj \textbf{700}, 832--843 (2009).
+\newblock \doi{10.1088/0004-637X/700/1/832}.
+\newblock \urlprefix\url{http://dx.doi.org/10.1088/0004-637X/700/1/832}
+
+\bibitem{2009AREPS..37..321C}
+{Chambers}, J.E.: {Planetary Migration: What Does It Mean for Planet
+  Formation?}
+\newblock Annual Review of Earth and Planetary Sciences \textbf{37}, 321--344
+  (2009).
+\newblock \doi{10.1146/annurev.earth.031208.100122}.
+\newblock \urlprefix\url{http://dx.doi.org/10.1146/annurev.earth.031208.100122}
+
+\bibitem{2009Natur.462..891C}
+{Charbonneau}, D., {Berta}, Z.K., {Irwin}, J., {Burke}, C.J., {Nutzman}, P.,
+  {Buchhave}, L.A., {Lovis}, C., {Bonfils}, X., {Latham}, D.W., {Udry}, S.,
+  {Murray-Clay}, R.A., {Holman}, M.J., {Falco}, E.E., {Winn}, J.N., {Queloz},
+  D., {Pepe}, F., {Mayor}, M., {Delfosse}, X., {Forveille}, T.: {A super-Earth
+  transiting a nearby low-mass star}.
+\newblock \\nat \textbf{462}, 891--894 (2009).
+\newblock \doi{10.1038/nature08679}.
+\newblock \urlprefix\url{http://dx.doi.org/10.1038/nature08679}
+
+\bibitem{1973ApJ...180..307C}
+Counselman, C.C.: Outcomes of tidal evolution.
+\newblock Astrophys. J. \textbf{180}, 307--316 (1973).
+\newblock \doi{10.1086/151964}.
+\newblock \urlprefix\url{http://dx.doi.org/10.1086/151964}
+
+\bibitem{2013ApJ...767...95D}
+{Dressing}, C.D., {Charbonneau}, D.: {The Occurrence Rate of Small Planets
+  around Small Stars}.
+\newblock \\apj \textbf{767}, 95 (2013).
+\newblock \doi{10.1088/0004-637X/767/1/95}.
+\newblock \urlprefix\url{http://dx.doi.org/10.1088/0004-637X/767/1/95}
+
+\bibitem{Erkaev2007Roche}
+{Erkaev}, N.V., {Kulikov}, Y.N., {Lammer}, H., {Selsis}, F., {Langmayr}, D.,
+  {Jaritz}, G.F., {Biernat}, H.K.: Roche lobe effects on the atmospheric loss
+  from ``hot jupiters''.
+\newblock Astron. Astrophys. \textbf{472}, 329--334 (2007).
+\newblock \doi{10.1051/0004-6361:20066929}.
+\newblock \urlprefix\url{http://dx.doi.org/10.1051/0004-6361:20066929}
+
+\bibitem{Essick2015Orbital}
+{Essick}, R., {Weinberg}, N.N.: Orbital decay of hot jupiters due to nonlinear
+  tidal dissipation within solar-type hosts.
+\newblock ArXiv e-prints  (2015).
+\newblock \urlprefix\url{http://arxiv.org/abs/1508.02763}
+
+\bibitem{2016ApJ...816...18E}
+{Essick}, R., {Weinberg}, N.N.: {Orbital Decay of Hot Jupiters Due to Nonlinear
+  Tidal Dissipation within Solar-type Hosts}.
+\newblock \\apj \textbf{816}, 18 (2016).
+\newblock \doi{10.3847/0004-637X/816/1/18}.
+\newblock \urlprefix\url{http://dx.doi.org/10.3847/0004-637X/816/1/18}
+
+\bibitem{2007ApJ...669.1298F}
+{Fabrycky}, D., {Tremaine}, S.: {Shrinking Binary and Planetary Orbits by Kozai
+  Cycles with Tidal Friction}.
+\newblock \\apj \textbf{669}, 1298--1315 (2007).
+\newblock \doi{10.1086/521702}.
+\newblock \urlprefix\url{http://dx.doi.org/10.1086/521702}
+
+\bibitem{2008CeMDA.101..171F}
+{Ferraz-Mello}, S., {Rodr{'{\i}}guez}, A., {Hussmann}, H.: {Tidal friction in
+  close-in satellites and exoplanets: The Darwin theory re-visited}.
+\newblock Celestial Mechanics and Dynamical Astronomy \textbf{101}, 171--201
+  (2008).
+\newblock \doi{10.1007/s10569-008-9133-x}.
+\newblock \urlprefix\url{http://dx.doi.org/10.1007/s10569-008-9133-x}
+
+\bibitem{2015ApJ...807...78F}
+{Ferraz-Mello}, S., {Tadeu dos Santos}, M., {Folonier}, H., {Czismadia}, S.,
+  {do Nascimento}, J.D., {P{\"{a}}tzold}, M.: {Interplay of Tidal Evolution and
+  Stellar Wind Braking in the Rotation of Stars Hosting Massive Close-In
+  Planets}.
+\newblock \\apj \textbf{807}, 78 (2015).
+\newblock \doi{10.1088/0004-637X/807/1/78}.
+\newblock \urlprefix\url{http://dx.doi.org/10.1088/0004-637X/807/1/78}
+
+\bibitem{2006ApJ...638L..45F}
+{Ford}, E.B., {Rasio}, F.A.: {On the Relation between Hot Jupiters and the
+  Roche Limit}.
+\newblock \\apjl \textbf{638}, L45--L48 (2006).
+\newblock \doi{10.1086/500734}.
+\newblock \urlprefix\url{http://dx.doi.org/10.1086/500734}
+
+\bibitem{Fortney2007Planetary}
+{Fortney}, J.J., {Marley}, M.S., {Barnes}, J.W.: Planetary radii across five
+  orders of magnitude in mass and stellar insolation: Application to transits.
+\newblock Astrophys. J. \textbf{659}(2), 1661--1672 (2007).
+\newblock \doi{10.1086/512120}.
+\newblock \urlprefix\url{http://dx.doi.org/10.1086/512120}
+
+\bibitem{2010SSRv..152..423F}
+{Fortney}, J.J., {Nettelmann}, N.: {The Interior Structure, Composition, and
+  Evolution of Giant Planets}.
+\newblock \\ssr \textbf{152}, 423--447 (2010).
+\newblock \doi{10.1007/s11214-009-9582-x}.
+\newblock \urlprefix\url{http://dx.doi.org/10.1007/s11214-009-9582-x}
+
+\bibitem{1966Icar....5..375G}
+{Goldreich}, P., {Soter}, S.: {Q in the Solar System}.
+\newblock \\icarus \textbf{5}, 375--389 (1966).
+\newblock \doi{10.1016/0019-1035(66)90051-0}.
+\newblock \urlprefix\url{http://dx.doi.org/10.1016/0019-1035(66)90051-0}
+
+\bibitem{Howard2010Occurrence}
+{Howard}, A.W., {Marcy}, G.W., {Johnson}, J.A., {Fischer}, D.A., {Wright},
+  J.T., {Isaacson}, H., {Valenti}, J.A., {Anderson}, J., {Lin}, D.N.C., {Ida},
+  S.: The occurrence and mass distribution of close-in {Super-Earths},
+  neptunes, and jupiters.
+\newblock Science \textbf{330}(6004), 653--655 (2010).
+\newblock \doi{10.1126/science.1194854}.
+\newblock \urlprefix\url{http://dx.doi.org/10.1126/science.1194854}
+
+\bibitem{2012ApJ...746..123H}
+{Howell}, S.B., {Rowe}, J.F., {Bryson}, S.T., {Quinn}, S.N., {Marcy}, G.W.,
+  {Isaacson}, H., {Ciardi}, D.R., {Chaplin}, W.J., {Metcalfe}, T.S.,
+  {Monteiro}, {Appourchaux}, T., {Basu}, S., {Creevey}, O.L., {Gilliland},
+  R.L., {Quirion}, P.O., {Stello}, D., {Kjeldsen}, H., {Christensen-Dalsgaard},
+  J., {Elsworth}, Y., {Garc{'{\i}}a}, R.A., {Houdek}, G., {Karoff}, C.,
+  {Molenda-{\.{Z}}akowicz}, J., {Thompson}, M.J., {Verner}, G.A., {Torres}, G.,
+  {Fressin}, F., {Crepp}, J.R., {Adams}, E., {Dupree}, A., {Sasselov}, D.D.,
+  {Dressing}, C.D., {Borucki}, W.J., {Koch}, D.G., {Lissauer}, J.J., {Latham},
+  D.W., {Buchhave}, L.A., {Gautier}, T.N., {Everett}, M., {Horch}, E.,
+  {Batalha}, N.M., {Dunham}, E.W., {Szkody}, P., {Silva}, D.R., {Mighell}, K.,
+  {Holberg}, J., {Ballot}, J., {Bedding}, T.R., {Bruntt}, H., {Campante}, T.L.,
+  {Handberg}, R., {Hekker}, S., {Huber}, D., {Mathur}, S., {Mosser}, B.,
+  {R{\'{e}}gulo}, C., {White}, T.R., {Christiansen}, J.L., {Middour}, C.K.,
+  {Haas}, M.R., {Hall}, J.R., {Jenkins}, J.M., {McCaulif}, S., {Fanelli}, M.N.,
+  {Kulesa}, C., {McCarthy}, D., {Henze}, C.E.: {Kepler-21b: A 1.6 R
+  \$\_{Earth}\$ Planet Transiting the Bright Oscillating F Subgiant Star HD
+  179070}.
+\newblock \\apj \textbf{746}, 123 (2012).
+\newblock \doi{10.1088/0004-637X/746/2/123}.
+\newblock \urlprefix\url{http://dx.doi.org/10.1088/0004-637X/746/2/123}
+
+\bibitem{2009ApJ...698.1357J}
+{Jackson}, B., {Barnes}, R., {Greenberg}, R.: {Observational Evidence for Tidal
+  Destruction of Exoplanets}.
+\newblock \\apj \textbf{698}, 1357--1366 (2009).
+\newblock \doi{10.1088/0004-637X/698/2/1357}.
+\newblock \urlprefix\url{http://dx.doi.org/10.1088/0004-637X/698/2/1357}
+
+\bibitem{Jackson2008Tidal}
+{Jackson}, B., {Greenberg}, R., {Barnes}, R.: Tidal evolution of close-in
+  extrasolar planets.
+\newblock Astrophys. J. \textbf{678}, 1396--1406 (2008).
+\newblock \doi{10.1086/529187}.
+\newblock \urlprefix\url{http://dx.doi.org/10.1086/529187}
+
+\bibitem{2014ApJ...783...54K}
+{Kurokawa}, H., {Nakamoto}, T.: {Mass-loss Evolution of Close-in Exoplanets:
+  Evaporation of Hot Jupiters and the Effect on Population}.
+\newblock \\apj \textbf{783}, 54 (2014).
+\newblock \doi{10.1088/0004-637X/783/1/54}.
+\newblock \urlprefix\url{http://dx.doi.org/10.1088/0004-637X/783/1/54}
+
+\bibitem{2014A&A...572A.107L}
+{Lambrechts}, M., {Johansen}, A.: {Forming the cores of giant planets from the
+  radial pebble flux in protoplanetary discs}.
+\newblock \\aap \textbf{572}, A107 (2014).
+\newblock \doi{10.1051/0004-6361/201424343}.
+\newblock \urlprefix\url{http://dx.doi.org/10.1051/0004-6361/201424343}
+
+\bibitem{2009ApJ...692L...9L}
+{Levrard}, B., {Winisdoerffer}, C., {Chabrier}, G.: {Falling Transiting
+  Extrasolar Giant Planets}.
+\newblock \\apjl \textbf{692}, L9--L13 (2009).
+\newblock \doi{10.1088/0004-637X/692/1/L9}.
+\newblock \urlprefix\url{http://dx.doi.org/10.1088/0004-637X/692/1/L9}
+
+\bibitem{2010Natur.463.1054L}
+Li, S.L., Miller, N., Lin, D.N.C., Fortney, J.J.: {WASP}-12b as a prolate,
+  inflated and disrupting planet from tidal dissipation.
+\newblock Nature \textbf{463}, 1054--1056 (2010).
+\newblock \doi{10.1038/nature08715}.
+\newblock \urlprefix\url{http://dx.doi.org/10.1038/nature08715}
+
+\bibitem{Li2010WASP12b}
+Li, S.l., Miller, N., Lin, D.N.C., Fortney, J.J.: {WASP}-12b as a prolate,
+  inflated and disrupting planet from tidal dissipation.
+\newblock Nature \textbf{463}(7284), 1054--1056 (2010).
+\newblock \doi{10.1038/nature08715}.
+\newblock \urlprefix\url{http://dx.doi.org/10.1038/nature08715}
+
+\bibitem{1996Natur.380..606L}
+Lin, D.N.C., Bodenheimer, P., Richardson, D.C.: Orbital migration of the
+  planetary companion of 51 pegasi to its present location.
+\newblock Nature \textbf{380}, 606--607 (1996).
+\newblock \doi{10.1038/380606a0}.
+\newblock \urlprefix\url{http://dx.doi.org/10.1038/380606a0}
+
+\bibitem{1979MNRAS.186..799L}
+{Lin}, D.N.C., {Papaloizou}, J.: {Tidal torques on accretion discs in binary
+  systems with extreme mass ratios}.
+\newblock \\mnras \textbf{186}, 799--812 (1979).
+\newblock \doi{10.1093/mnras/186.4.799}.
+\newblock \urlprefix\url{http://dx.doi.org/10.1093/mnras/186.4.799}
+
+\bibitem{Lopez2013Role}
+{Lopez}, E.D., {Fortney}, J.J.: The role of core mass in controlling
+  evaporation: The kepler radius distribution and the kepler-36 density
+  dichotomy.
+\newblock Astrophys. J. \textbf{776}, 2+ (2013).
+\newblock \doi{10.1088/0004-637x/776/1/2}.
+\newblock \urlprefix\url{http://dx.doi.org/10.1088/0004-637x/776/1/2}
+
+\bibitem{Lopez2014Understanding}
+{Lopez}, E.D., {Fortney}, J.J.: Understanding the {Mass-Radius} relation for
+  sub-neptunes: Radius as a proxy for composition.
+\newblock Astrophys. J. \textbf{792}(1), 1+ (2014).
+\newblock \doi{10.1088/0004-637x/792/1/1}.
+\newblock \urlprefix\url{http://dx.doi.org/10.1088/0004-637x/792/1/1}
+
+\bibitem{2014PNAS..11112655M}
+{Marcy}, G.W., {Weiss}, L.M., {Petigura}, E.A., {Isaacson}, H., {Howard}, A.W.,
+  {Buchhave}, L.A.: {Occurrence and core-envelope structure of 1-4x Earth-size
+  planets around Sun-like stars}.
+\newblock Proceedings of the National Academy of Science \textbf{111},
+  12,655--12,660 (2014).
+\newblock \doi{10.1073/pnas.1304197111}.
+\newblock \urlprefix\url{http://dx.doi.org/10.1073/pnas.1304197111}
+
+\bibitem{2013ApJ...775L..11M}
+{McQuillan}, A., {Mazeh}, T., {Aigrain}, S.: {Stellar Rotation Periods of the
+  Kepler Objects of Interest: A Dearth of Close-in Planets around Fast
+  Rotators}.
+\newblock \\apjl \textbf{775}, L11 (2013).
+\newblock \doi{10.1088/2041-8205/775/1/L11}.
+\newblock \urlprefix\url{http://dx.doi.org/10.1088/2041-8205/775/1/L11}
+
+\bibitem{2012MNRAS.425.2778M}
+{Metzger}, B.D., {Giannios}, D., {Spiegel}, D.S.: {Optical and X-ray transients
+  from planet-star mergers}.
+\newblock \\mnras \textbf{425}, 2778--2798 (2012).
+\newblock \doi{10.1111/j.1365-2966.2012.21444.x}.
+\newblock \urlprefix\url{http://dx.doi.org/10.1111/j.1365-2966.2012.21444.x}
+
+\bibitem{MurrayDermott1999}
+Murray, C.D., Dermott, S.F.: {Solar system dynamics} (1999)
+
+\bibitem{2009ApJ...693...23M}
+{Murray-Clay}, R.A., {Chiang}, E.I., {Murray}, N.: {Atmospheric Escape From Hot
+  Jupiters}.
+\newblock \\apj \textbf{693}, 23--42 (2009).
+\newblock \doi{10.1088/0004-637X/693/1/23}.
+\newblock \urlprefix\url{http://dx.doi.org/10.1088/0004-637X/693/1/23}
+
+\bibitem{Owen2012Planetary}
+Owen, J.E., Jackson, A.P.: Planetary evaporation by {UV} \& x-ray radiation:
+  basic hydrodynamics.
+\newblock Mon. Not. Roy. Astron. Soc. \textbf{425}, 2931--2947 (2012).
+\newblock \doi{10.1111/j.1365-2966.2012.21481.x}.
+\newblock \urlprefix\url{http://dx.doi.org/10.1111/j.1365-2966.2012.21481.x}
+
+\bibitem{2011ApJS..192....3P}
+{Paxton}, B., {Bildsten}, L., {Dotter}, A., {Herwig}, F., {Lesaffre}, P.,
+  {Timmes}, F.: {Modules for Experiments in Stellar Astrophysics (MESA)}.
+\newblock \\apjs \textbf{192}, 3 (2011).
+\newblock \doi{10.1088/0067-0049/192/1/3}.
+\newblock \urlprefix\url{http://dx.doi.org/10.1088/0067-0049/192/1/3}
+
+\bibitem{2013ApJS..208....4P}
+{Paxton}, B., {Cantiello}, M., {Arras}, P., {Bildsten}, L., {Brown}, E.F.,
+  {Dotter}, A., {Mankovich}, C., {Montgomery}, M.H., {Stello}, D., {Timmes},
+  F.X., {Townsend}, R.: {Modules for Experiments in Stellar Astrophysics
+  (MESA): Planets, Oscillations, Rotation, and Massive Stars}.
+\newblock \\apjs \textbf{208}, 4 (2013).
+\newblock \doi{10.1088/0067-0049/208/1/4}.
+\newblock \urlprefix\url{http://dx.doi.org/10.1088/0067-0049/208/1/4}
+
+\bibitem{2011ApJ...731...67P}
+{Penev}, K., {Sasselov}, D.: {Tidal Evolution of Close-in Extrasolar Planets:
+  High Stellar Q from New Theoretical Models}.
+\newblock \\apj \textbf{731}, 67 (2011).
+\newblock \doi{10.1088/0004-637X/731/1/67}.
+\newblock \urlprefix\url{http://dx.doi.org/10.1088/0004-637X/731/1/67}
+
+\bibitem{2007ApJ...655.1166P}
+{Penev}, K., {Sasselov}, D., {Robinson}, F., {Demarque}, P.: {On Dissipation
+  inside Turbulent Convection Zones from Three-dimensional Simulations of Solar
+  Convection}.
+\newblock \\apj \textbf{655}, 1166--1171 (2007).
+\newblock \doi{10.1086/507937}.
+\newblock \urlprefix\url{http://dx.doi.org/10.1086/507937}
+
+\bibitem{2002ApJ...565.1107P}
+{Podsiadlowski}, P., {Rappaport}, S., {Pfahl}, E.D.: {Evolutionary Sequences
+  for Low- and Intermediate-Mass X-Ray Binaries}.
+\newblock \\apj \textbf{565}, 1107--1133 (2002).
+\newblock \doi{10.1086/324686}.
+\newblock \urlprefix\url{http://dx.doi.org/10.1086/324686}
+
+\bibitem{2014A&A...565L...1P}
+{Poppenhaeger}, K., {Wolk}, S.J.: {Indications for an influence of hot Jupiters
+  on the rotation and activity of their host stars}.
+\newblock \\aap \textbf{565}, L1 (2014).
+\newblock \doi{10.1051/0004-6361/201423454}.
+\newblock \urlprefix\url{http://dx.doi.org/10.1051/0004-6361/201423454}
+
+\bibitem{Priedhorsky1988Tidal}
+{Priedhorsky}, W.C., {Verbunt}, F.: Tidal forces and mass transfer
+  instabilities in low-mass x-ray binaries.
+\newblock Astrophys. J. \textbf{333}, 895--905 (1988).
+\newblock \doi{10.1086/166798}.
+\newblock \urlprefix\url{http://dx.doi.org/10.1086/166798}
+
+\bibitem{Rappaport1982}
+Rappaport, S., Joss, P.C., Webbink, R.F.: The evolution of highly compact
+  binary stellar systems.
+\newblock Astrophys. J. \textbf{254}, 616--640 (1982).
+\newblock \doi{10.1086/159772}.
+\newblock \urlprefix\url{http://dx.doi.org/10.1086/159772}
+
+\bibitem{Rappaport2013Roche}
+{Rappaport}, S., {Sanchis-Ojeda}, R., {Rogers}, L.A., {Levine}, A., {Winn},
+  J.N.: The roche limit for close-orbiting planets: Minimum density,
+  composition constraints, and application to the 4.2 hr planet {KOI} 1843.03.
+\newblock Astrophys. J. Lett. \textbf{773}, L15+ (2013).
+\newblock \doi{10.1088/2041-8205/773/1/l15}.
+\newblock \urlprefix\url{http://dx.doi.org/10.1088/2041-8205/773/1/l15}
+
+\bibitem{Ribas2005Evolution}
+{Ribas}, I., {Guinan}, E.F., {G{\"{u}}del}, M., {Audard}, M.: Evolution of the
+  solar activity over time and effects on planetary atmospheres. i. high-energy
+  irradiances (1-1700 {\aa}).
+\newblock Astrophys. J. \textbf{622}, 680--694 (2005).
+\newblock \doi{10.1086/427977}.
+\newblock \urlprefix\url{http://dx.doi.org/10.1086/427977}
+
+\bibitem{Ritter1988Turning}
+Ritter, H.: {Turning on and off mass transfer in cataclysmic binaries}.
+\newblock Astronomy and Astrophysics \textbf{202}, 93--100 (1988)
+
+\bibitem{2014ApJ...787...47S}
+{Sanchis-Ojeda}, R., {Rappaport}, S., {Winn}, J.N., {Kotson}, M.C., {Levine},
+  A., {El Mellah}, I.: {A Study of the Shortest-period Planets Found with
+  Kepler}.
+\newblock \\apj \textbf{787}, 47 (2014).
+\newblock \doi{10.1088/0004-637X/787/1/47}.
+\newblock \urlprefix\url{http://dx.doi.org/10.1088/0004-637X/787/1/47}
+
+\bibitem{2013ApJ...774...54S}
+{Sanchis-Ojeda}, R., {Rappaport}, S., {Winn}, J.N., {Levine}, A., {Kotson},
+  M.C., {Latham}, D.W., {Buchhave}, L.A.: {Transits and Occultations of an
+  Earth-sized Planet in an 8.5 hr Orbit}.
+\newblock \\apj \textbf{774}, 54 (2013).
+\newblock \doi{10.1088/0004-637X/774/1/54}.
+\newblock \urlprefix\url{http://dx.doi.org/10.1088/0004-637X/774/1/54}
+
+\bibitem{2015ApJ...813..101V}
+{Valsecchi}, F., {Rappaport}, S., {Rasio}, F.A., {Marchant}, P., {Rogers},
+  L.A.: {Tidally-driven Roche-lobe Overflow of Hot Jupiters with MESA}.
+\newblock \\apj \textbf{813}, 101 (2015).
+\newblock \doi{10.1088/0004-637X/813/2/101}.
+\newblock \urlprefix\url{http://dx.doi.org/10.1088/0004-637X/813/2/101}
+
+\bibitem{2014ApJ...793L...3V}
+{Valsecchi}, F., {Rasio}, F.A., {Steffen}, J.H.: {From Hot Jupiters to
+  Super-Earths via Roche Lobe Overflow}.
+\newblock \\apjl \textbf{793}, L3 (2014).
+\newblock \doi{10.1088/2041-8205/793/1/L3}.
+\newblock \urlprefix\url{http://dx.doi.org/10.1088/2041-8205/793/1/L3}
+
+\bibitem{2014PhDT.........4V}
+{Van Laerhoven}, C.L.: {Multi-planet extra-solar systems: Tides and classical
+  secular theory}.
+\newblock Ph.D. thesis, The University of Arizona (2014)
+
+\bibitem{VidalMadjar2003Extended}
+{Vidal-Madjar}, A., {Lecavelier des Etangs}, {D{\'{e}}sert}, J.M., {Ballester},
+  G.E., {Ferlet}, R., {H{\'{e}}brard}, G., {Mayor}, M.: An extended upper
+  atmosphere around the extrasolar planet {HD209458b}.
+\newblock Nature \textbf{422}(6928), 143--146 (2003).
+\newblock \doi{10.1038/nature01448}.
+\newblock \urlprefix\url{http://dx.doi.org/10.1038/nature01448}
+
+\bibitem{2008A&A...482..691W}
+{Walker}, G.A.H., {Croll}, B., {Matthews}, J.M., {Kuschnig}, R., {Huber}, D.,
+  {Weiss}, W.W., {Shkolnik}, E., {Rucinski}, S.M., {Guenther}, D.B., {Moffat},
+  A.F.J., {Sasselov}, D.: {MOST detects variability on {\$\\tau\$} Bootis A
+  possibly induced by its planetary companion}.
+\newblock \\aap \textbf{482}, 691--697 (2008).
+\newblock \doi{10.1051/0004-6361:20078952}.
+\newblock \urlprefix\url{http://dx.doi.org/10.1051/0004-6361:20078952}
+
+\bibitem{2015ApJ...799..229W}
+{Wang}, J., {Fischer}, D.A., {Horch}, E.P., {Huang}, X.: {On the Occurrence
+  Rate of Hot Jupiters in Different Stellar Environments}.
+\newblock \\apj \textbf{799}, 229 (2015).
+\newblock \doi{10.1088/0004-637X/799/2/229}.
+\newblock \urlprefix\url{http://dx.doi.org/10.1088/0004-637X/799/2/229}
+
+\bibitem{Watson1981Dynamics}
+{Watson}, A.J., {Donahue}, T.M., {Walker}, J.C.G.: The dynamics of a rapidly
+  escaping atmosphere - applications to the evolution of earth and venus.
+\newblock Icarus \textbf{48}, 150--166 (1981).
+\newblock \doi{10.1016/0019-1035(81)90101-9}.
+\newblock \urlprefix\url{http://dx.doi.org/10.1016/0019-1035(81)90101-9}
+
+\bibitem{2012ApJ...745...54W}
+{Wilson}, H.F., {Militzer}, B.: {Solubility of Water Ice in Metallic Hydrogen:
+  Consequences for Core Erosion in Gas Giant Planets}.
+\newblock \\apj \textbf{745}, 54 (2012).
+\newblock \doi{10.1088/0004-637X/745/1/54}.
+\newblock \urlprefix\url{http://dx.doi.org/10.1088/0004-637X/745/1/54}
+
+\bibitem{2011ApJ...735..109W}
+Wu, Y., Lithwick, Y.: {Secular Chaos and the Production of Hot Jupiters}.
+\newblock Astrophysical Journal \textbf{735}, 109 (2011).
+\newblock \doi{10.1088/0004-637X/735/2/109}.
+\newblock \urlprefix\url{http://dx.doi.org/10.1088/0004-637X/735/2/109}
+
+\end{thebibliography}
